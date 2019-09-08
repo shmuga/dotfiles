@@ -33,6 +33,8 @@
     ~/.tmux/powerline/themes/default.sh: 
         force: true
         path: tmux/powerline.theme.sh
+    ~/.vim: vim
+    ~/.vimrc: vimrc
 
 
 

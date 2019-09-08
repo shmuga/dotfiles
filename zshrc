@@ -4,10 +4,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/loca
 export ANTIGEN_COMPDUMPFILE=~/.zcompdump
 source ~/.zsh/perf.zsh
 
-# ------------------- [OH MY ZSH] -------------------
-# export ZSH=~/.oh-my-zsh
-# source $ZSH/oh-my-zsh.sh
-
 # ------------------- [ANTIGEN (PLUGIN MANAGER)] -------------------
 
 source ~/.zsh/antigen/antigen.zsh
@@ -32,6 +28,3 @@ antigen apply
 source ~/.zsh/autocomplete.zsh
 source ~/.zsh/node.zsh
 source ~/.zsh/alias.zsh
-
-# fnm
-eval "$(fnm env --multi)"
