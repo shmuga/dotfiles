@@ -1,3 +1,38 @@
-- clean: []
-- link: {}
-- shell: []
+- clean: ['~']
+
+- tap:
+  - railwaycat/emacsmacport
+  - nexeck/homebrew-tmuxinator
+
+- brew:
+    - git
+    - git-lfs
+    - zsh
+    - fzf
+    - Schniz/tap/fnm
+    - fasd
+    - nexeck/homebrew-tmuxinator/tmuxinator
+
+- cask:
+  - emacs-mac
+
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- link:
+    ~/.ideavimrc: ideavimrc
+    ~/.gitignore_global: gitignore_global
+    ~/.gitconfig: gitconfig
+    ~/.zsh: zsh
+    ~/.zshrc: zshrc
+    ~/.tmux: tmux
+    ~/.tmux.conf: tmux.conf
+    ~/.tmuxinator: tmuxinator
+    ~/.tmux/powerline/themes/default.sh: 
+        force: true
+        path: tmux/powerline.theme.sh
+
+
+

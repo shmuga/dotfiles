@@ -1,0 +1,11 @@
+# /Users/mark/.tmuxinator/default.yml
+
+name: default
+root: ~/
+
+windows:
+  - editor:
+      layout: main-vertical
+      panes:
+        - vim
+        - zsh
