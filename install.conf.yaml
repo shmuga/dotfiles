@@ -35,6 +35,7 @@
         path: tmux/powerline.theme.sh
     ~/.vim: vim
     ~/.vimrc: vimrc
+    ~/.inputrc: inputrc
 
 
 

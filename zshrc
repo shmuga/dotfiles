@@ -1,5 +1,12 @@
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin"
 
+# ------------------- [BEFORE] -------------------
+if [ -d $HOME/.zsh.before/ ]; then
+  if [ "$(ls -A $HOME/.zsh.before/)" ]; then
+    for config_file ($HOME/.zsh.before/*.zsh) source $config_file
+  fi
+fi
+
 # Tweak for performance improvements
 export ANTIGEN_COMPDUMPFILE=~/.zcompdump
 source ~/.zsh/perf.zsh
@@ -28,3 +35,10 @@ antigen apply
 source ~/.zsh/autocomplete.zsh
 source ~/.zsh/node.zsh
 source ~/.zsh/alias.zsh
+
+# ------------------- [AFTER] -------------------
+if [ -d $HOME/.zsh.after/ ]; then
+  if [ "$(ls -A $HOME/.zsh.after/)" ]; then
+    for config_file ($HOME/.zsh.after/*.zsh) source $config_file
+  fi
+fi

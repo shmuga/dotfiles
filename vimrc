@@ -11,7 +11,7 @@ set history=3000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
 set gcr=a:blinkon0              "Disable cursor blink
-set visualbell                  "No sounds
+set belloff=all                 "no bell
 set autoread                    "Reload files changed outside vim
 set hidden
 syntax on                       "turn on syntax highlighting

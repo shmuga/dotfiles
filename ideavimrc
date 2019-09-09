@@ -1,3 +1,5 @@
+" Support for miltiple cursors
+set multiple-cursors
 " Support for vim-surround commands
 set surround
 "

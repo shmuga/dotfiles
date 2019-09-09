@@ -16,6 +16,7 @@ alias psg="ps aux | grep "
 # Moving around
 alias cdb='cd -'
 alias cls='clear;ls'
+alias cdh='cd ~'
 
 # Show human friendly numbers and colors
 alias df='df -h'

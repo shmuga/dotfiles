@@ -9,6 +9,9 @@ Plug 'wolverian/minimal'                         " theme
 
 " ------------------- [Git] -------------------
 Plug 'tpope/vim-git'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " ------------------- [Languages] -------------------
 Plug 'sheerun/vim-polyglot'
