@@ -7,7 +7,11 @@ Plug 'itchyny/lightline.vim'                     " bottom status bar
 Plug 'jby/tmux.vim'                              " tmux vim bindings
 Plug 'wolverian/minimal'                         " theme
 Plug 'dominikduda/vim_current_word'
+Plug 'camspiers/lens.vim'
 Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'talek/obvious-resize'
+Plug 'wellle/context.vim'
+
 
 " ------------------- [TerminalGit] -------------------
 Plug 'wincent/terminus'
@@ -25,6 +29,8 @@ Plug 'vim-syntastic/syntastic'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'sevko/vim-nand2tetris-syntax'
 Plug 'janko/vim-test'
+Plug 'dense-analysis/ale'
+Plug 'sheerun/vim-polyglot'
 
 " ------------------- [JS/TS/React] -------------------
 Plug 'pangloss/vim-javascript'

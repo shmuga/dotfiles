@@ -6,21 +6,6 @@
 
 let mapleader=","
 
-" alias yw to yank the entire word 'yank inner word'
-" even if the cursor is halfway inside the word
-" FIXME: will not properly repeat when you use a dot (tie into repeat.vim)
-nnoremap ,yw yiww
-
-" ,ow = 'overwrite word', replace a word with what's in the yank buffer
-" FIXME: will not properly repeat when you use a dot (tie into repeat.vim)
-nnoremap ,ow "_diwhp
-
-"make Y consistent with C and D
-nnoremap Y y$
-function! YRRunAfterMaps()
-  nnoremap Y   :<C-U>YRYankCount 'y$'<CR>
-endfunction
-
 " Make 0 go to the first character rather than the beginning
 " of the line. When we're programming, we're almost always
 " interested in working with text rather than empty space. If
@@ -28,34 +13,6 @@ endfunction
 nnoremap 0 ^
 nnoremap ^ 0
 
-" ," Surround a word with "quotes"
-map ," ysiw"
-vmap ," c"<C-R>""<ESC>
-
-" ,' Surround a word with 'single quotes'
-map ,' ysiw'
-vmap ,' c'<C-R>"'<ESC>
-
-" ,) or ,( Surround a word with (parens)
-" The difference is in whether a space is put in
-map ,( ysiw(
-map ,) ysiw)
-vmap ,( c( <C-R>" )<ESC>
-vmap ,) c(<C-R>")<ESC>
-
-" ,[ Surround a word with [brackets]
-map ,] ysiw]
-map ,[ ysiw[
-vmap ,[ c[ <C-R>" ]<ESC>
-vmap ,] c[<C-R>"]<ESC>
-
-" ,{ Surround a word with {braces}
-map ,} ysiw}
-map ,{ ysiw{
-vmap ,} c{ <C-R>" }<ESC>
-vmap ,{ c{<C-R>"}<ESC>
-
-map ,` ysiw`
 
 "Go to last edit location with ,.
 nnoremap ,. '.
@@ -68,20 +25,20 @@ nnoremap ,. '.
 " the first quote will autoclose so you'll get 'foo' and hitting <c-a> will
 " put the cursor right after the quote
 imap <C-a> <esc>wa
-
+"
 " ==== NERD tree
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
-nnoremap <silent> <C-\> :NERDTreeToggle<CR>
+nnoremap <silent> <Space>\ :NERDTreeToggle<CR>
 
 " ,q to toggle quickfix window (where you have stuff like Ag)
 " ,oq to open it back up (rare)
-nmap <silent> ,qc :cclose<CR>
-nmap <silent> ,qo :copen<CR>
+nmap <silent> <Space>qc :cclose<CR>
+nmap <silent> <Space>qo :copen<CR>
 
 "Move back and forth through previous and next buffers
 "with ,z and ,x
-nnoremap <silent> ,z :bp<CR>
-nnoremap <silent> ,x :bn<CR>
+nnoremap <silent> <Space>z :bp<CR>
+nnoremap <silent> <Space>x :bn<CR>
 
 " ==============================
 " Window/Tab/Split Manipulation
@@ -93,18 +50,11 @@ nnoremap <silent> ,x :bn<CR>
 " nnoremap <silent> <C-k> <C-w>k
 " nnoremap <silent> <C-j> <C-w>j
 
-" Make gf (go to file) create the file, if not existent
-nnoremap <C-w>f :sp +e<cfile><CR>
-nnoremap <C-w>gf :tabe<cfile><CR>
-
-" Zoom in
-map <silent> ,gz <C-w>o
-
 " Create window splits easier. The default
 " way is Ctrl-w,v and Ctrl-w,s. I remap
 " this to vv and ss
-nnoremap <silent> vv <C-w>v
-nnoremap <silent> VV <C-w>s
+nnoremap <silent> <Space>= <C-w>v
+nnoremap <silent> <Space>- <C-w>s
 
 " ============================
 " Shortcuts for everyday tasks
@@ -112,17 +62,14 @@ nnoremap <silent> VV <C-w>s
 
 " copy current filename into system clipboard - mnemonic: (c)urrent(f)ilename
 " this is helpful to paste someone the path you're looking at
-nnoremap <silent> ,cf :let @* = expand("%:~")<CR>
-nnoremap <silent> ,cn :let @* = expand("%:t")<CR>
+nnoremap <silent> <Space>cf :let @* = expand("%:~")<CR>
+nnoremap <silent> <Space>cn :let @* = expand("%:t")<CR>
 
 "Clear current search highlight by double tapping //
-nmap <silent> // :nohlsearch<CR>
-
-"(v)im (c)ommand - execute current line as a vim command
-nmap <silent> ,vc yy:<C-f>p<C-c><CR>
+nmap <silent> <Space>// :nohlsearch<CR>
 
 "(v)im (r)eload
-nmap <silent> <leader>vr :so %<CR>
+nmap <silent> <Space>vr :so %<CR>
 
 " Type ,hl to toggle highlighting on/off, and show current value.
 noremap ,hl :set hlsearch! hlsearch?<CR>

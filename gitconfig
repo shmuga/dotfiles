@@ -111,7 +111,7 @@
 [core]
   autocrlf = false
   editor = vim
-	excludesfile = ~/.gitignore_global
+	excludesfile = /Users/marorel/.gitignore_global
 [advice]
   statusHints = false
 [diff]
@@ -131,7 +131,7 @@
 	smudge = git-lfs smudge %f
 [user]
 	name = Mark Orel
-	email = mail.ormark@gmail.com
+	email = marorel@amazon.com
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
