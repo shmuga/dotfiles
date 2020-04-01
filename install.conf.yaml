@@ -11,6 +11,7 @@
     - fzf
     - Schniz/tap/fnm
     - fasd
+    - rg
     - nexeck/homebrew-tmuxinator/tmuxinator
 
 - cask:
@@ -35,7 +36,8 @@
         path: tmux/powerline.theme.sh
     ~/.vim: vim
     ~/.vimrc: vimrc
+    ~/.config/nvim: nvim
     ~/.inputrc: inputrc
-
+    ~/.config/alacritty/alacritty.yml: alacritty.yaml
 
 

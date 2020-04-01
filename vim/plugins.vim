@@ -6,20 +6,31 @@ Plug 'chrisbra/Colorizer'                        " displays colors next to hex
 Plug 'itchyny/lightline.vim'                     " bottom status bar
 Plug 'jby/tmux.vim'                              " tmux vim bindings
 Plug 'wolverian/minimal'                         " theme
+Plug 'dominikduda/vim_current_word'
+Plug 'junegunn/rainbow_parentheses.vim'
+
+" ------------------- [TerminalGit] -------------------
+Plug 'wincent/terminus'
 
 " ------------------- [Git] -------------------
 Plug 'tpope/vim-git'
 Plug 'airblade/vim-gitgutter'
+Plug 'APZelos/blamer.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " ------------------- [Languages] -------------------
-Plug 'sheerun/vim-polyglot'
 Plug 'jtratner/vim-flavored-markdown'
-Plug 'scrooloose/syntastic'
+Plug 'vim-syntastic/syntastic'
+Plug 'ycm-core/YouCompleteMe'
+Plug 'sevko/vim-nand2tetris-syntax'
+Plug 'janko/vim-test'
+
+" ------------------- [JS/TS/React] -------------------
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'Quramy/tsuquyomi'
 
 " ------------------- [Project] -------------------
 Plug 'jistr/vim-nerdtree-tabs'
@@ -35,6 +46,8 @@ Plug 'vim-scripts/IndexedSearch'
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'skwp/greplace.vim'
 Plug 'Lokaltog/vim-easymotion'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 " ------------------- [Text objects] -------------------
 Plug 'austintaylor/vim-indentobject'
@@ -48,8 +61,6 @@ Plug 'lucapette/vim-textobj-underscore'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'thinca/vim-textobj-function-javascript'
 Plug 'vim-scripts/argtextobj.vim'
-
-"
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'briandoll/change-inside-surroundings.vim'
@@ -65,7 +76,6 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'bogado/file-line'
 Plug 'mattn/webapi-vim'
 Plug 'sjl/gundo.vim'
-Plug 'skwp/YankRing.vim'
 Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-endwise'
@@ -77,7 +87,8 @@ Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'vim-scripts/lastpos.vim'
 Plug 'vim-scripts/sudo.vim'
 Plug 'goldfeld/ctrlr.vim'
-
+Plug 'editorconfig/editorconfig-vim'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
 

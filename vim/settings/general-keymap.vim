@@ -3,6 +3,9 @@
 " ========================================
 "
 "
+
+let mapleader=","
+
 " alias yw to yank the entire word 'yank inner word'
 " even if the cursor is halfway inside the word
 " FIXME: will not properly repeat when you use a dot (tie into repeat.vim)
@@ -101,7 +104,7 @@ map <silent> ,gz <C-w>o
 " way is Ctrl-w,v and Ctrl-w,s. I remap
 " this to vv and ss
 nnoremap <silent> vv <C-w>v
-nnoremap <silent> ss <C-w>s
+nnoremap <silent> VV <C-w>s
 
 " ============================
 " Shortcuts for everyday tasks
@@ -119,7 +122,7 @@ nmap <silent> // :nohlsearch<CR>
 nmap <silent> ,vc yy:<C-f>p<C-c><CR>
 
 "(v)im (r)eload
-nmap <silent> ,vr :so %<CR>
+nmap <silent> <leader>vr :so %<CR>
 
 " Type ,hl to toggle highlighting on/off, and show current value.
 noremap ,hl :set hlsearch! hlsearch?<CR>
