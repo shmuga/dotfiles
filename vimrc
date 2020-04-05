@@ -10,10 +10,13 @@ set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=3000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
+set signcolumn=yes              "Fuck blinking
+set cmdheight=2                 "More space for messages
 set gcr=a:blinkon0              "Disable cursor blink
 set belloff=all                 "no bell
 set autoread                    "Reload files changed outside vim
 set hidden
+set clipboard=unnamedplus
 syntax on                       "turn on syntax highlighting
 
 " Change leader to a comma because the backslash is too far away
@@ -50,10 +53,6 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab
-
-" Auto indent pasted text
-nnoremap p p=`]<C-o>
-nnoremap P P=`]<C-o>
 
 filetype plugin on
 filetype indent on

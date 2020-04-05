@@ -11,6 +11,8 @@ Plug 'camspiers/lens.vim'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'talek/obvious-resize'
 Plug 'wellle/context.vim'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'Yggdroot/indentLine'
 
 
 " ------------------- [TerminalGit] -------------------
@@ -23,20 +25,35 @@ Plug 'APZelos/blamer.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-" ------------------- [Languages] -------------------
-Plug 'jtratner/vim-flavored-markdown'
-Plug 'vim-syntastic/syntastic'
-Plug 'ycm-core/YouCompleteMe'
-Plug 'sevko/vim-nand2tetris-syntax'
+" ------------------- [Tests] -------------------
 Plug 'janko/vim-test'
-Plug 'dense-analysis/ale'
-Plug 'sheerun/vim-polyglot'
 
-" ------------------- [JS/TS/React] -------------------
+" ------------------- [Languages] -------------------
+Plug 'editorconfig/editorconfig-vim'
+" syntax
+Plug 'sheerun/vim-polyglot'
+Plug 'jtratner/vim-flavored-markdown'
+Plug 'sevko/vim-nand2tetris-syntax'
+
+" completioms/ls
+"Plug 'ycm-core/YouCompleteMe'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+" checks
+"Plug 'vim-syntastic/syntastic'
+Plug 'dense-analysis/ale'
+
+" ------------------- [Rust] -------------------
+Plug 'rust-lang/rust.vim'
+
+
+" ------------------- [JS/TS] -------------------
 Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'Quramy/tsuquyomi'
+"Plug 'vim-jsx-typescript'
+"Plug 'Quramy/tsuquyomi'
 
 " ------------------- [Project] -------------------
 Plug 'jistr/vim-nerdtree-tabs'
@@ -64,9 +81,11 @@ Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-function'
 Plug 'kana/vim-textobj-user'
 Plug 'lucapette/vim-textobj-underscore'
-Plug 'nathanaelkane/vim-indent-guides'
 Plug 'thinca/vim-textobj-function-javascript'
 Plug 'vim-scripts/argtextobj.vim'
+
+
+" ------------------- [Other] -------------------
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'briandoll/change-inside-surroundings.vim'
@@ -90,11 +109,8 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/AnsiEsc.vim'
-Plug 'vim-scripts/lastpos.vim'
+"Plug 'vim-scripts/lastpos.vim'
 Plug 'vim-scripts/sudo.vim'
-Plug 'goldfeld/ctrlr.vim'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'Yggdroot/indentLine'
 
 call plug#end()
 

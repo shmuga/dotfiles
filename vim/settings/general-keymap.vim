@@ -30,6 +30,9 @@ imap <C-a> <esc>wa
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
 nnoremap <silent> <Space>\ :NERDTreeToggle<CR>
 
+" ==== Context  
+nnoremap <silent> <Space>gc :ContextToggle<CR>
+
 " ,q to toggle quickfix window (where you have stuff like Ag)
 " ,oq to open it back up (rare)
 nmap <silent> <Space>qc :cclose<CR>
@@ -81,3 +84,4 @@ noremap ,hl :set hlsearch! hlsearch?<CR>
 " swap them: http://items.sjbach.com/319/configuring-vim-right
 nnoremap ' `
 nnoremap ` '
+
