@@ -89,3 +89,5 @@ alias gz='tar -zcvf'
 
 # Source tree
 alias stree='open -a SourceTree .'
+alias n='nvim'
+alias nn='nvim .'

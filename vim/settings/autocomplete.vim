@@ -23,7 +23,8 @@ function! s:show_documentation()
   endif
 endfunction
 
-nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+nmap grn <Plug>(coc-rename)
+nnoremap <silent> gy  :<C-u>CocList -A --normal yank<cr>
 nnoremap <silent> go :call <SID>show_documentation()<CR>
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gd <Plug>(coc-definition)

@@ -129,9 +129,6 @@
 	required = true
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
-[user]
-	name = Mark Orel
-	email = marorel@amazon.com
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

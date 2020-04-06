@@ -17,6 +17,7 @@ set belloff=all                 "no bell
 set autoread                    "Reload files changed outside vim
 set hidden
 set clipboard=unnamedplus
+set autowriteall
 syntax on                       "turn on syntax highlighting
 
 " Change leader to a comma because the backslash is too far away

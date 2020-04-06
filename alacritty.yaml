@@ -63,5 +63,5 @@ alt_send_esc: false
 shell:
   program: /bin/zsh
 
-  #key_bindings:
-  #- { key: K, mods: Command, mode: ~Vi, chars: "\x0c" }
+key_bindings:
+  - { key: F,      mods: Command|Control,    action: ToggleFullscreen }
