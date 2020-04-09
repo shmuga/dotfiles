@@ -31,7 +31,7 @@ imap <C-a> <esc>wa
 nnoremap <silent> <Space>\ :NERDTreeToggle<CR>
 
 " ==== Context  
-nnoremap <silent> <Space>gc :ContextToggle<CR>
+nnoremap <silent> <Space>cx :ContextToggle<CR>
 
 " ,q to toggle quickfix window (where you have stuff like Ag)
 " ,oq to open it back up (rare)
