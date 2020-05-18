@@ -16,7 +16,7 @@ source ~/.zsh/perf.zsh
 source ~/.zsh/antigen/antigen.zsh
 
 antigen use oh-my-zsh
-antigen theme reobin/typewritten
+antigen theme romkatv/powerlevel10k
 
 antigen bundle git
 antigen bundle tmux
@@ -34,6 +34,7 @@ antigen apply
 # ------------------- [CUSTOM SETTINGS] -------------------
 KEYTIMEOUT=1
 
+source ~/.zsh/p10k.zsh
 source ~/.zsh/autocomplete.zsh
 source ~/.zsh/node.zsh
 source ~/.zsh/alias.zsh
