@@ -3,7 +3,8 @@ source ~/.vim/plug/plug.vim
 call plug#begin('~/.vim/plugged')
 " ------------------- [Appearence] -------------------
 Plug 'chrisbra/Colorizer'                        " displays colors next to hex
-Plug 'itchyny/lightline.vim'                     " bottom status bar
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'jby/tmux.vim'                              " tmux vim bindings
 Plug 'wolverian/minimal'                         " theme
 Plug 'dominikduda/vim_current_word'
@@ -13,7 +14,7 @@ Plug 'talek/obvious-resize'
 Plug 'wellle/context.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'Yggdroot/indentLine'
-
+Plug 'chrisbra/Colorizer'
 
 " ------------------- [TerminalGit] -------------------
 Plug 'wincent/terminus'
@@ -27,6 +28,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " ------------------- [Tests] -------------------
 Plug 'janko/vim-test'
+Plug 'thinca/vim-quickrun'
+Plug 'skywind3000/asyncrun.vim'
+
 
 " ------------------- [Languages] -------------------
 Plug 'editorconfig/editorconfig-vim'
@@ -36,12 +40,9 @@ Plug 'jtratner/vim-flavored-markdown'
 Plug 'sevko/vim-nand2tetris-syntax'
 
 " completioms/ls
-"Plug 'ycm-core/YouCompleteMe'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " checks
-"Plug 'vim-syntastic/syntastic'
 Plug 'dense-analysis/ale'
 
 " ------------------- [Rust] -------------------
@@ -52,16 +53,15 @@ Plug 'rust-lang/rust.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
-"Plug 'vim-jsx-typescript'
-"Plug 'Quramy/tsuquyomi'
 
 " ------------------- [Project] -------------------
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-session'
 Plug '907th/vim-auto-save'
+Plug 'thaerkh/vim-workspace'
+Plug 'ianding1/leetcode.vim'
 
 " ------------------- [Search] -------------------
 Plug 'justinmk/vim-sneak'
@@ -110,9 +110,8 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/AnsiEsc.vim'
-"Plug 'vim-scripts/lastpos.vim'
 Plug 'vim-scripts/sudo.vim'
-
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 filetype plugin indent on

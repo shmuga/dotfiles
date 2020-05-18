@@ -7,17 +7,20 @@ window:
 
 font:
   normal:
-    family: Hasklig
+    family: JetBrainsMono Nerd Font
     style: Regular
   bold:
-    family: Hasklig
-    style: Semibold
+    family: JetBrainsMono Nerd Font
+    style: Bold
   italic:
-    family: Hasklig
+    family: JetBrainsMono Nerd Font
     style: Regular Italic
 
-  size: 22.0
+  size: 21.0
   use_thin_strokes: true
+  offset:
+    y: 5
+    x: 0
 
 # Colors (Solarized Light)
 colors:

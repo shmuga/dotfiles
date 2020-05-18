@@ -6,18 +6,22 @@ endif
 " ------------------- [General] -------------------
 set nocompatible                "Vim no vi
 set number                      "Line numbers are good
+set numberwidth=2               "Width of the gutter area
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=3000                "Store lots of :cmdline history
 set showcmd                     "Show incomplete cmds down the bottom
 set showmode                    "Show current mode down the bottom
 set signcolumn=yes              "Fuck blinking
-set cmdheight=2                 "More space for messages
+set cmdheight=1                 "More space for messages
 set gcr=a:blinkon0              "Disable cursor blink
 set belloff=all                 "no bell
 set autoread                    "Reload files changed outside vim
 set hidden
 set clipboard=unnamedplus
 set autowriteall
+set laststatus=2
+set encoding=utf8
+set guifont=JetBrains:h20
 syntax on                       "turn on syntax highlighting
 
 " Change leader to a comma because the backslash is too far away
