@@ -11,7 +11,6 @@ Plug 'dominikduda/vim_current_word'
 Plug 'camspiers/lens.vim'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'talek/obvious-resize'
-Plug 'wellle/context.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'Yggdroot/indentLine'
 Plug 'chrisbra/Colorizer'
@@ -47,13 +46,6 @@ Plug 'dense-analysis/ale'
 
 " ------------------- [Rust] -------------------
 Plug 'rust-lang/rust.vim'
-
-
-" ------------------- [JS/TS] -------------------
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'leafgarland/typescript-vim'
-
 " ------------------- [Project] -------------------
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'scrooloose/nerdtree'
