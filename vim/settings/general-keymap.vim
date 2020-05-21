@@ -36,16 +36,6 @@ nmap <silent> <Space>qo :copen<CR>
 nnoremap <silent> <Space>z :bp<CR>
 nnoremap <silent> <Space>x :bn<CR>
 
-" ==============================
-" Window/Tab/Split Manipulation
-" ==============================
-" Move between split windows by using the four directions H, L, K, J
-" NOTE: This has moved to vim/settings/vim-tmux-navigator.vim.
-" nnoremap <silent> <C-h> <C-w>h
-" nnoremap <silent> <C-l> <C-w>l
-" nnoremap <silent> <C-k> <C-w>k
-" nnoremap <silent> <C-j> <C-w>j
-
 " Create window splits easier. The default
 " way is Ctrl-w,v and Ctrl-w,s. I remap
 " this to vv and ss

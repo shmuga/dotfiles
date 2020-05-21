@@ -1,6 +1,6 @@
 let g:obvious_resize_default = 2
 
-noremap <silent> <C-J> :<C-U>ObviousResizeUp<CR>
-noremap <silent> <C-K> :<C-U>ObviousResizeDown<CR>
-noremap <silent> <C-H> :<C-U>ObviousResizeLeft<CR>
-noremap <silent> <C-L> :<C-U>ObviousResizeRight<CR>
+noremap <silent> <C-Up> :<C-U>ObviousResizeUp<CR>
+noremap <silent> <C-Down> :<C-U>ObviousResizeDown<CR>
+noremap <silent> <C-Left> :<C-U>ObviousResizeLeft<CR>
+noremap <silent> <C-Right> :<C-U>ObviousResizeRight<CR>

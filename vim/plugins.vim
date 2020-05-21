@@ -5,15 +5,12 @@ call plug#begin('~/.vim/plugged')
 Plug 'chrisbra/Colorizer'                        " displays colors next to hex
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'jby/tmux.vim'                              " tmux vim bindings
-Plug 'wolverian/minimal'                         " theme
 Plug 'dominikduda/vim_current_word'
 Plug 'camspiers/lens.vim'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'talek/obvious-resize'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'Yggdroot/indentLine'
-Plug 'chrisbra/Colorizer'
 
 " ------------------- [TerminalGit] -------------------
 Plug 'wincent/terminus'
@@ -33,6 +30,7 @@ Plug 'skywind3000/asyncrun.vim'
 
 " ------------------- [Languages] -------------------
 Plug 'editorconfig/editorconfig-vim'
+Plug 'mattn/emmet-vim'
 " syntax
 Plug 'sheerun/vim-polyglot'
 Plug 'jtratner/vim-flavored-markdown'
@@ -43,25 +41,22 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " checks
 Plug 'dense-analysis/ale'
-
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 " ------------------- [Rust] -------------------
 Plug 'rust-lang/rust.vim'
 " ------------------- [Project] -------------------
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'scrooloose/nerdtree'
 Plug 'xolox/vim-misc'
-Plug 'xolox/vim-session'
-Plug '907th/vim-auto-save'
 Plug 'thaerkh/vim-workspace'
 Plug 'ianding1/leetcode.vim'
 
 " ------------------- [Search] -------------------
-Plug 'justinmk/vim-sneak'
 Plug 'rking/ag.vim'
 Plug 'vim-scripts/IndexedSearch'
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'skwp/greplace.vim'
-Plug 'Lokaltog/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
