@@ -82,7 +82,7 @@ Plug 'godlygeek/tabular'
 Plug 'tomtom/tcomment_vim'
 Plug 'vim-scripts/camelcasemotion'
 Plug 'vim-scripts/matchit.zip'
-Plug 'kristijanhusak/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'Keithbsmiley/investigate.vim'
 Plug 'chrisbra/NrrwRgn'
 Plug 'christoomey/vim-tmux-navigator'
