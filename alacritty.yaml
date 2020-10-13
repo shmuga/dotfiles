@@ -16,10 +16,10 @@ font:
     family: JetBrainsMono Nerd Font
     style: Regular Italic
 
-  size: 21.0
+  size: 20.0
   use_thin_strokes: true
   offset:
-    y: 5
+    y: 1
     x: 0
 
 # Colors (Solarized Light)

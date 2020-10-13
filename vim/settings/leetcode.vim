@@ -1,4 +1,6 @@
-let g:leetcode_browser = 'firefox'
+let g:leetcode_browser = 'chrome'
+let g:leetcode_solution_filetype = 'javascript'
+
 
 nnoremap <leader>ll :LeetCodeList<cr>
 nnoremap <leader>lt :LeetCodeTest<cr>

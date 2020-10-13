@@ -89,5 +89,10 @@ alias gz='tar -zcvf'
 
 # Source tree
 alias stree='open -a SourceTree .'
+
+# Vim
 alias n='nvim'
 alias nn='nvim .'
+
+# Cat
+alias cat='bat --theme ansi-light --style="numbers,changes,header"'

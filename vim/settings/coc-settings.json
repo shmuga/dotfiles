@@ -1,0 +1,4 @@
+{
+  "erlang_ls.erlang_ls_path": "/usr/local/bin/erlang_ls",
+  "erlang_ls.trace.server": "verbose"
+}

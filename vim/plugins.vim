@@ -11,7 +11,7 @@ Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'talek/obvious-resize'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'Yggdroot/indentLine'
-
+Plug 'ashisha/image.vim'
 " ------------------- [TerminalGit] -------------------
 Plug 'wincent/terminus'
 
@@ -35,9 +35,9 @@ Plug 'mattn/emmet-vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'sevko/vim-nand2tetris-syntax'
-
 " completioms/ls
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'hyhugh/coc-erlang_ls', {'do': 'yarn install --frozen-lockfile'}
 
 " checks
 Plug 'dense-analysis/ale'
@@ -59,6 +59,7 @@ Plug 'skwp/greplace.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'antoinemadec/coc-fzf'
 
 " ------------------- [Text objects] -------------------
 Plug 'austintaylor/vim-indentobject'
@@ -99,6 +100,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'vim-scripts/sudo.vim'
 Plug 'ryanoasis/vim-devicons'
+filetype plugin indent on
 call plug#end()
 
-filetype plugin indent on

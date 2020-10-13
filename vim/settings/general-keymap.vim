@@ -13,6 +13,9 @@ let mapleader=","
 nnoremap 0 ^
 nnoremap ^ 0
 
+" remapping for terminal usage
+tnoremap <Esc> <C-\><C-n>
+
 
 "Go to last edit location with ,.
 nnoremap ,. '.

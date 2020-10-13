@@ -12,6 +12,8 @@
     - Schniz/tap/fnm
     - fasd
     - rg
+    - bat
+    - ag
     - nexeck/homebrew-tmuxinator/tmuxinator
 
 - cask:

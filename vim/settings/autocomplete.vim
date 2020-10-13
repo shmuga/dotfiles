@@ -23,12 +23,21 @@ function! s:show_documentation()
   endif
 endfunction
 
+" actions
+xmap ga  <Plug>(coc-codeaction-selected)
+nmap ga  <Plug>(coc-codeaction-selected)
+nmap gc  <Plug>(coc-codeaction)
+
+" format
 xmap gf  <Plug>(coc-format-selected)
 nmap gf  <Plug>(coc-format-selected)
+
+" general
 nmap grn <Plug>(coc-rename)
-nnoremap <silent> gy  :<C-u>CocList -A --normal yank<cr>
 nnoremap <silent> go :call <SID>show_documentation()<CR>
+
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gt <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gfx :CocFix<CR>
