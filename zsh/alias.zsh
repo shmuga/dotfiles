@@ -95,4 +95,4 @@ alias n='nvim'
 alias nn='nvim .'
 
 # Cat
-alias cat='bat --theme ansi-light --style="numbers,changes,header"'
+alias cat='bat'
