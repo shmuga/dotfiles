@@ -1,14 +1,15 @@
-nnoremap <Space><Space> :FZF<cr>
-nnoremap <Space>r :Buffers<cr>
-nnoremap <Space>f :Rg<cr>
-nnoremap <Space>ag :Ag<cr>
-nnoremap <Space>l :BLines<cr>
-nnoremap <Space>al :Lines<cr>
-nnoremap <Space>gs :GFiles?<cr>
-nnoremap <Space>c :Commits<cr>
-nnoremap <Space>bc :Commits<cr>
+nnoremap <Space><Space> : FZF<cr>
+nnoremap <Space>r       : Buffers<cr>
+nnoremap <Space>f       : Rg<cr>
+nnoremap <Space>ag      : Ag<cr>
+nnoremap <Space>l       : BLines<cr>
+nnoremap <Space>al      : Lines<cr>
+nnoremap <Space>gs      : GFiles?<cr>
+nnoremap <Space>gf      : GFiles<cr>
+nnoremap <Space>c       : Commits<cr>
+nnoremap <Space>bc      : Commits<cr>
 
-nnoremap <silent> <space>a       :<C-u>CocFzfList diagnostics<CR>
+nnoremap <silent> <space>d       :<C-u>CocFzfList diagnostics<CR>
 nnoremap <silent> <space>b       :<C-u>CocFzfList diagnostics --current-buf<CR>
 nnoremap <silent> <space>co       :<C-u>CocFzfList commands<CR>
 nnoremap <silent> <space>e       :<C-u>CocFzfList extensions<CR>

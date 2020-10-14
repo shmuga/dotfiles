@@ -42,6 +42,3 @@ vmap ,{ c{<C-R>"}<ESC>
 
 map ,` ysiw`
 
-" comments
-" Command-/ to toggle comments
-map // :TComment<CR>

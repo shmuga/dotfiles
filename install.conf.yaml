@@ -41,6 +41,7 @@
     ~/.config/nvim: nvim
     ~/.inputrc: inputrc
     ~/.config/alacritty/alacritty.yml: alacritty.yaml
+    ~/.config/bat/config: bat.config
     ~/.config/nvim/coc-settings.json: vim/settings/coc-settings.json
 
 
