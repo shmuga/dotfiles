@@ -2,6 +2,7 @@
 
 - tap:
   - railwaycat/emacsmacport
+  - clementtsang/bottom
   - nexeck/homebrew-tmuxinator
 
 - brew:
@@ -14,6 +15,11 @@
     - rg
     - bat
     - ag
+    - dust
+    - tldr
+    - tokei
+    - sd
+    - bottom
     - nexeck/homebrew-tmuxinator/tmuxinator
 
 - cask:

@@ -49,9 +49,11 @@ Plug 'jistr/vim-nerdtree-tabs'
 Plug 'scrooloose/nerdtree'
 Plug 'xolox/vim-misc'
 Plug 'thaerkh/vim-workspace'
+Plug 'jceb/vim-orgmode'
 Plug 'ianding1/leetcode.vim'
 Plug 'benmills/vimux'
-
+Plug 'mattn/calendar-vim'
+Plug 'vim-scripts/utl.vim'
 
 " ------------------- [Search] -------------------
 Plug 'nelstrom/vim-visual-star-search' " search selection using *

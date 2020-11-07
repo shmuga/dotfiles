@@ -1,9 +1,8 @@
 " Vim color file
 " Converted from Textmate theme Do Not Disturb using Coloration v0.4.0 (http://github.com/sickill/coloration)
 
-set background=light
-" highlight clear
-highlight clear SignColumn
+set background=light highlight clear SignColumn
+
 
 if exists("syntax_on")
   syntax reset
@@ -15,7 +14,7 @@ hi Cursor ctermfg=230 guifg=#fdf6e3 guibg=#d5cfbf gui=NONE
 hi Visual ctermfg=NONE guifg=NONE guibg=#d5cfbf gui=NONE
 hi CursorLine ctermfg=NONE guifg=NONE guibg=#e9e3d1 gui=NONE
 hi CursorColumn ctermfg=NONE guifg=NONE guibg=#e9e3d1 gui=NONE
-hi ColorColumn ctermfg=NONE guifg=NONE guibg=#e9e3d1 gui=NONE
+hi ColorColumn ctermbg=lightgrey guibg=lightgrey gui=NONE
 hi LineNr ctermfg=102 guifg=#98958b guibg=#e9e3d1 gui=NONE
 hi VertSplit ctermfg=145 guifg=#c2bdb0 guibg=#c2bdb0 gui=NONE
 hi MatchParen ctermfg=236 cterm=underline guifg=#333333 guibg=NONE gui=underline

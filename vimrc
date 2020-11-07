@@ -14,6 +14,7 @@ set showmode                    "Show current mode down the bottom
 set signcolumn=yes              "Fuck blinking
 set cmdheight=1                 "More space for messages
 set gcr=a:blinkon0              "Disable cursor blink
+set colorcolumn=80
 set belloff=all                 "no bell
 set autoread                    "Reload files changed outside vim
 set hidden
@@ -30,7 +31,7 @@ set guicursor+=i:ver10
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
-" The mapleader has to be set before vundle starts loading all 
+" The mapleader has to be set before vundle starts loading all
 " the plugins.
 let mapleader=","
 

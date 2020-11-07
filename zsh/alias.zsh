@@ -96,3 +96,7 @@ alias nn='nvim .'
 
 # Cat
 alias cat='bat'
+alias du='dust'
+alias sed='sd'
+alias cloc='tokei'
+alias top='btm'
