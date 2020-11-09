@@ -137,5 +137,8 @@
 	trustExitCode = true
 [fetch]
 	recurseSubmodules = false
+[commit]
+	template = /Users/mark/.stCommitMsg
 [user]
-	email = marorel@amazon.com
+	name = Mark Orel
+	email = mail.ormark@gmail.com

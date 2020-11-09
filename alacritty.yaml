@@ -19,7 +19,7 @@ font:
   size: 20.0
   use_thin_strokes: true
   offset:
-    y: 1
+    y: 2
     x: 0
 
 # Colors (Solarized Light)

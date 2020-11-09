@@ -38,22 +38,22 @@ function! s:show_documentation()
 endfunction
 
 " actions
-xmap ga  <Plug>(coc-codeaction-selected)
-nmap ga  <Plug>(coc-codeaction-selected)
+" xmap ga  <Plug>(coc-codeaction-selected)
+" nmap ga  <Plug>(coc-codeaction-selected)
 
 " format
-xmap gf  <Plug>(coc-format-selected)
-nmap gf  <Plug>(coc-format-selected)
+" xmap gf  <Plug>(coc-format-selected)
+" nmap gf  <Plug>(coc-format-selected)
 
 " general
-nmap grn <Plug>(coc-rename)
 nnoremap <silent> go :call <SID>show_documentation()<CR>
 
+" nmap grn <Plug>(coc-rename)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gt <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gfx :CocFix<CR>
+" nmap <silent> gfx :CocFix<CR>
 
 
 " Map function and class text objects
