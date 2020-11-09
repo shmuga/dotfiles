@@ -1,12 +1,14 @@
 " Vim color file
 " Converted from Textmate theme Do Not Disturb using Coloration v0.4.0 (http://github.com/sickill/coloration)
 
-set background=light highlight clear SignColumn
+set background=light
+highlight clear SignColumn
 
 
 if exists("syntax_on")
   syntax reset
 endif
+
 
 let g:colors_name = "donotdisturb"
 

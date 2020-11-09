@@ -8,9 +8,11 @@ Plug 'dominikduda/vim_current_word'
 Plug 'talek/obvious-resize'
 Plug 'Yggdroot/indentLine'
 Plug 'ashisha/image.vim'
-
+Plug 'liuchengxu/vim-which-key'
+Plug 'wesQ3/vim-windowswap'
 " ------------------- [TerminalGit] -------------------
 Plug 'wincent/terminus'
+Plug 'voldikss/vim-floaterm'
 
 " ------------------- [Git] -------------------
 Plug 'tpope/vim-git'
@@ -37,7 +39,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'hyhugh/coc-erlang_ls', {'do': 'yarn install --frozen-lockfile'}
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-
+Plug 'liuchengxu/vista.vim'
+Plug 'metakirby5/codi.vim'
 
 " ------------------- [Stylechecks] -------------------
 Plug 'editorconfig/editorconfig-vim'
@@ -54,6 +57,8 @@ Plug 'ianding1/leetcode.vim'
 Plug 'benmills/vimux'
 Plug 'mattn/calendar-vim'
 Plug 'vim-scripts/utl.vim'
+Plug 'sjl/gundo.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 " ------------------- [Search] -------------------
 Plug 'nelstrom/vim-visual-star-search' " search selection using *
@@ -64,6 +69,8 @@ Plug 'easymotion/vim-easymotion' " see easymotion.vim
 Plug 'junegunn/fzf' " see fzf.vim
 Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf' " see coc.vim
+Plug 'yuki-ycino/fzf-preview.vim'
+Plug 'brooth/far.vim'
 
 " ------------------- [Text objects] -------------------
 Plug 'wellle/targets.vim' " a(argument) t(tags) () [] <> {} , . ; : + - = ~ _ * # / | \ & $

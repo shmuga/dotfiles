@@ -4,6 +4,7 @@
   - railwaycat/emacsmacport
   - clementtsang/bottom
   - nexeck/homebrew-tmuxinator
+  - jesseduffield/lazygit
 
 - brew:
     - git
@@ -20,6 +21,8 @@
     - tokei
     - sd
     - bottom
+    - lazygit
+    - clementtsang/bottom/bottom
     - nexeck/homebrew-tmuxinator/tmuxinator
 
 - cask:
