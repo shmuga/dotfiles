@@ -37,6 +37,7 @@
     ~/.ideavimrc: ideavimrc
     ~/.gitignore_global: gitignore_global
     ~/.gitconfig: gitconfig
+    ~/.stCommitMsg: commit_template
     ~/.zsh: zsh
     ~/.zshrc: zshrc
     ~/.tmux: tmux

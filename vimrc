@@ -23,6 +23,7 @@ set autowriteall
 set laststatus=2
 set encoding=utf8
 set guifont=JetBrains:h20
+set pumheight=20
 syntax on                       "turn on syntax highlighting
 
 " ------------------- [Cursor] -------------------
