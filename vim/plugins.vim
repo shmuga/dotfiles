@@ -10,6 +10,8 @@ Plug 'Yggdroot/indentLine'
 Plug 'ashisha/image.vim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'wesQ3/vim-windowswap'
+Plug 'nvim-treesitter/nvim-treesitter'
+
 " ------------------- [TerminalGit] -------------------
 Plug 'wincent/terminus'
 Plug 'voldikss/vim-floaterm'
@@ -69,7 +71,7 @@ Plug 'easymotion/vim-easymotion' " see easymotion.vim
 Plug 'junegunn/fzf' " see fzf.vim
 Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf' " see coc.vim
-Plug 'yuki-ycino/fzf-preview.vim'
+Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
 Plug 'brooth/far.vim'
 
 " ------------------- [Text objects] -------------------
