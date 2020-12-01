@@ -94,9 +94,11 @@ alias stree='open -a SourceTree .'
 alias n='nvim'
 alias nn='nvim .'
 
-# Cat
+# Common tools
 alias cat='bat'
 alias du='dust'
 alias sed='sd'
 alias cloc='tokei'
 alias top='btm'
+alias cloc='tokei'
+alias find='fd'

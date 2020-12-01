@@ -111,7 +111,8 @@
 [core]
   autocrlf = false
   editor = vim
-	excludesfile = /Users/marorel/.gitignore_global
+	excludesfile = ~/.gitignore_global
+	pager = less -FMRiX
 [advice]
   statusHints = false
 [diff]
@@ -138,7 +139,7 @@
 [fetch]
 	recurseSubmodules = false
 [commit]
-	template = /Users/mark/.stCommitMsg
+	template = ~/.stCommitMsg
 [user]
 	name = Mark Orel
 	email = mail.ormark@gmail.com
