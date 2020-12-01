@@ -95,6 +95,7 @@ Plug 'mattn/webapi-vim' " for programming via web api
 Plug 'mbbill/undotree' " tree of undo - Space+u
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'vim-scripts/sudo.vim'
+Plug 'chrisbra/Colorizer' " colors inline
 
 
 " ------------------- [TPope perls] -------------------

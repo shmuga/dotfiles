@@ -29,10 +29,12 @@ let g:which_key_map['u'] = [ ':UndotreeToggle'                               ,  
 let g:which_key_map['w'] = [ ':call WindowSwap#EasyWindowSwap()'             ,  'move window' ]
 let g:which_key_map['z'] = [ 'Goyo'                                          ,  'zen' ]
 
+
 let g:which_key_map.a = {
       \ 'name' : '+actions' ,
       \ 'c' : [':ColorizerToggle'          ,  'colorizer'],
       \ 'e' : [':CocCommand explorer'      ,  'explorer'],
+      \ 'h' : [':SyntaxQuery'              ,  'highligh group'],
       \ 'm' : [':MarkdownPreview'          ,  'markdown preview'],
       \ 'M' : [':MarkdownPreviewStop'      ,  'markdown preview stop'],
       \ 'n' : [':set nonumber!'            ,  'line-numbers'],
@@ -105,15 +107,18 @@ let g:which_key_map.g = {
       \ 'b' : [':Git blame'                        , 'blame'],
       \ 'B' : [':GBrowse'                          , 'browse'],
       \ 'c' : [':Git commit'                       , 'commit'],
+      \ 'C' : [':Git commit --amend'               , 'commit (A)mend'],
       \ 'd' : [':Git diff'                         , 'diff'],
       \ 'D' : [':Gdiffsplit'                       , 'diff split'],
       \ 'g' : [':GGrep'                            , 'git grep'],
       \ 'i' : [':Gist -b'                          , 'post gist'],
       \ 'l' : [':Git log'                          , 'log'],
+      \ 'L' : [':diffget //2'                      , 'take LEFT'],
       \ 'm' : ['<Plug>(git-messenger)'             , 'message'],
       \ 'p' : [':Git push'                         , 'push'],
       \ 'P' : [':Git pull'                         , 'pull'],
       \ 'r' : [':GRemove'                          , 'remove'],
+      \ 'R' : [':diffget //3'                      , 'take RIGHT'],
       \ 's' : [':Gstatus'                          , 'status'],
       \ 'S' : [':CocCommand fzf-preview.GitStatus' , 'status'],
       \ 'v' : [':GV'                               , 'view commits'],

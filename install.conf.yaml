@@ -15,6 +15,7 @@
     - fasd
     - rg
     - bat
+    - fd
     - ag
     - dust
     - tldr
