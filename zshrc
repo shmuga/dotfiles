@@ -7,8 +7,6 @@ if [ -d $HOME/.zsh.before/ ]; then
   fi
 fi
 
-# Tweak for performance improvements
-export ANTIGEN_COMPDUMPFILE=~/.zcompdump
 source ~/.zsh/perf.zsh
 
 # ------------------- [ANTIGEN (PLUGIN MANAGER)] -------------------
@@ -20,14 +18,10 @@ antigen theme romkatv/powerlevel10k
 
 antigen bundle git
 antigen bundle tmux
-antigen bundle tmuxinator
 
 antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
-# antigen bundle chrissicool/zsh-256color
-antigen bundle djui/alias-tips
 antigen bundle Tarrasch/zsh-bd
-antigen bundle sei40kr/zsh-tmux-rename
 antigen bundle fasd
 
 antigen apply

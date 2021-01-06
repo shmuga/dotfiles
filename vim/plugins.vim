@@ -63,6 +63,7 @@ Plug 'benmills/vimux'
 Plug 'mattn/calendar-vim'
 Plug 'vim-scripts/utl.vim'
 Plug 'sjl/gundo.vim'
+Plug 'vimwiki/vimwiki'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 " ------------------- [Search] -------------------
