@@ -23,6 +23,8 @@
     - sd
     - bottom
     - lazygit
+    - hstr
+    - jrnl
     - clementtsang/bottom/bottom
     - nexeck/homebrew-tmuxinator/tmuxinator
 
@@ -39,6 +41,9 @@
     ~/.gitignore_global: gitignore_global
     ~/.gitconfig: gitconfig
     ~/.stCommitMsg: commit_template
+    ~/.config/fish/config.fish: config.fish
+    ~/.config/fish/fish_plugins: config.fish.plugins
+    ~/.fish: fish
     ~/.zsh: zsh
     ~/.zshrc: zshrc
     ~/.tmux: tmux
@@ -55,5 +60,3 @@
     ~/.config/bat/config: bat/bat.config
     ~/.config/bat/themes/DoNotDisturb.tmTheme: bat/DoNotDisturb.tmTheme
     ~/.config/nvim/coc-settings.json: vim/settings/coc-settings.json
-
-
