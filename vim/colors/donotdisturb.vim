@@ -12,6 +12,7 @@ endif
 
 let g:colors_name = "donotdisturb"
 
+hi   VertSplit      cterm=NONE
 hi   Normal         ctermfg=236         guifg=#333333        guibg=#fdf6e3   gui=NONE
 hi   NonText        ctermfg=187         guifg=#d5cfbf        guibg=#f3ecda   gui=NONE
 hi   Folded         ctermfg=28          guifg=#0d810d        guibg=#fdf6e3   gui=NONE

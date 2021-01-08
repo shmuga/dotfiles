@@ -10,7 +10,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'ashisha/image.vim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'wesQ3/vim-windowswap'
-Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'junegunn/goyo.vim'
 
 " ------------------- [TerminalGit] -------------------
 Plug 'wincent/terminus'
