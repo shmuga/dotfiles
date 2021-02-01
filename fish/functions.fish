@@ -3,7 +3,7 @@ function load_folder
   if test -e $fish_before
     if count (ls $fish_before)
       for f in $fish_before/*.fish
-        echo f
+        source $f
       end
     end
   end
