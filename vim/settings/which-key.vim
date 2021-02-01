@@ -185,6 +185,19 @@ let g:which_key_map.l = {
       \ 'Z' : [':CocEnable'                          , 'enable CoC'],
       \ }
 
+let g:which_key_map.W = {
+      \ 'name' : '+wiki',
+      \ 'i' : [':VimwikiIndex', 'index'],
+      \ 'd' : [':VimwikiMakeDiaryNote', 'diary'],
+      \ 'j' : [':VimwikiNextTask', 'next task'],
+      \ 'k' : [':VimwikiPrevTask', 'prev task'],
+      \ 't' : [':VimwikiToggleListItem', 'toggle list'],
+      \ 'T' : [':VimwikiTOC', 'table of contents'],
+      \ 's' : [':VWS', 'search wiki'],
+      \ 'S' : [':VimwikiSearchTags', 'search tags'],
+      \ 'b' : [':VWB', 'search backlinks'],
+      \ }
+
 " Not a fan of floating windows for this
 let g:which_key_use_floating_win = 0
 let g:which_key_max_size = 0

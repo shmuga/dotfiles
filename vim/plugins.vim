@@ -1,4 +1,5 @@
 source ~/.vim/plug/plug.vim
+source ~/.vim/settings/before.vim
 
 call plug#begin('~/.vim/plugged')
 " ------------------- [Appearence] -------------------
