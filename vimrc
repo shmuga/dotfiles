@@ -25,6 +25,8 @@ set encoding=utf8
 set guifont=JetBrains:h20
 set pumheight=20
 syntax on                       "turn on syntax highlighting
+set exrc                        "allows loading local executing local rc files
+set secure                      " disallows the use of :autocmd, shell and write commands in local .vimrc files
 
 " ------------------- [Cursor] -------------------
 set guicursor=n-v-c:block-Cursor

@@ -126,6 +126,15 @@ let g:which_key_map.g = {
       \ }
 
 let g:which_key_map.t = {
+      \ 'name' : '+test' ,
+      \ 'n' : [':TestNearest' , 'nearest'],
+      \ 'f' : [':TestFile'    , 'file'],
+      \ 's' : [':TestSuite'   , 'suite'],
+      \ 'l' : [':TestLast'    , 'last'],
+      \ 'v' : [':TestVisit'   , 'go back'],
+      \ }
+
+let g:which_key_map.T = {
       \ 'name' : '+terminal' ,
       \ ';' : [':FloatermNew --wintype=normal --height=6'        , 'terminal'],
       \ 'f' : [':FloatermNew fzf'                               , 'fzf'],

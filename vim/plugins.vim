@@ -11,6 +11,8 @@ Plug 'ashisha/image.vim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'wesQ3/vim-windowswap'
 Plug 'junegunn/goyo.vim'
+Plug 'airblade/vim-rooter'
+Plug 'vimwiki/vimwiki'
 
 " ------------------- [TerminalGit] -------------------
 Plug 'wincent/terminus'
@@ -27,7 +29,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'janko/vim-test'
 Plug 'thinca/vim-quickrun'
 Plug 'skywind3000/asyncrun.vim'
-
+Plug 'benmills/vimux'
 
 " ------------------- [Syntax] -------------------
 Plug 'sheerun/vim-polyglot'
@@ -68,10 +70,10 @@ Plug 'rking/ag.vim' " fast search of text :Ag
 Plug 'vim-scripts/IndexedSearch'
 Plug 'skwp/greplace.vim' " :Greplace
 Plug 'easymotion/vim-easymotion' " see easymotion.vim
-Plug 'junegunn/fzf' " see fzf.vim
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf' " see coc.vim
-Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
+Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release/rpc' }
 Plug 'brooth/far.vim'
 
 " ------------------- [Text objects] -------------------

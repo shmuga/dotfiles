@@ -12,6 +12,7 @@ endif
 
 let g:colors_name = "donotdisturb"
 
+hi   Pmenu          ctermbg=225
 hi   VertSplit      cterm=NONE
 hi   Normal         ctermfg=236         guifg=#333333        guibg=#fdf6e3   gui=NONE
 hi   NonText        ctermfg=187         guifg=#d5cfbf        guibg=#f3ecda   gui=NONE
@@ -49,7 +50,6 @@ hi! link Function   Constant
 hi! link Operator   Constant
 hi! link Special    Constant
 hi! link Tag        Constant
-hi! link Pmenu      Constant
 hi! link ErrorMsg   Constant
 hi! link WarningMsg Constant
 
