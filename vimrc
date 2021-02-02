@@ -27,6 +27,9 @@ set pumheight=20
 syntax on                       "turn on syntax highlighting
 set exrc                        "allows loading local executing local rc files
 set secure                      " disallows the use of :autocmd, shell and write commands in local .vimrc files
+set ttimeoutlen=10
+set sessionoptions-=blank
+set shell=/bin/bash\ -i         "when fish is used this speeds up tmux navigator
 
 " ------------------- [Cursor] -------------------
 set guicursor=n-v-c:block-Cursor
