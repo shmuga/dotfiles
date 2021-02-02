@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 " ------------------- [Appearence] -------------------
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'dominikduda/vim_current_word'
+Plug 'RRethy/vim-illuminate'
 Plug 'talek/obvious-resize'
 Plug 'Yggdroot/indentLine'
 Plug 'ashisha/image.vim'
@@ -30,7 +30,6 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'janko/vim-test'
 Plug 'thinca/vim-quickrun'
 Plug 'skywind3000/asyncrun.vim'
-Plug 'benmills/vimux'
 
 " ------------------- [Syntax] -------------------
 Plug 'sheerun/vim-polyglot'

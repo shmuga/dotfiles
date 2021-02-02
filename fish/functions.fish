@@ -10,5 +10,4 @@ function load_folder
 end 
 
 function fish_greeting
-  fortune
 end

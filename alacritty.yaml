@@ -20,7 +20,7 @@ font:
   use_thin_strokes: true
   offset:
     y: 2
-    x: 0
+    x: -2
 
 # Colors (Solarized Light)
 colors:
@@ -64,7 +64,7 @@ colors:
 alt_send_esc: false
 
 shell:
-  program: /bin/zsh
+  program: /usr/local/bin/fish
 
 key_bindings:
   - { key: F,      mods: Command|Control,    action: ToggleFullscreen }
