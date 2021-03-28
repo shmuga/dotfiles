@@ -12,8 +12,6 @@ Plug 'ashisha/image.vim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'wesQ3/vim-windowswap'
 Plug 'junegunn/goyo.vim'
-Plug 'airblade/vim-rooter'
-Plug 'vimwiki/vimwiki'
 
 " ------------------- [TerminalGit] -------------------
 Plug 'wincent/terminus'
@@ -29,6 +27,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 " ------------------- [Tests] -------------------
 Plug 'janko/vim-test'
 Plug 'thinca/vim-quickrun'
+Plug 'tpope/vim-dispatch'
 Plug 'skywind3000/asyncrun.vim'
 
 " ------------------- [Syntax] -------------------
@@ -64,6 +63,7 @@ Plug 'vim-scripts/utl.vim'
 Plug 'sjl/gundo.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'itchyny/calendar.vim'
 
 " ------------------- [Search] -------------------
 Plug 'nelstrom/vim-visual-star-search' " search selection using *
@@ -99,6 +99,7 @@ Plug 'mbbill/undotree' " tree of undo - Space+u
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'vim-scripts/sudo.vim'
 Plug 'chrisbra/Colorizer' " colors inline
+Plug 'airblade/vim-rooter' " auto change folder
 
 
 " ------------------- [TPope perls] -------------------

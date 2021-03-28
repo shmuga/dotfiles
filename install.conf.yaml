@@ -53,6 +53,8 @@
         force: true
         path: tmux/powerline.theme.sh
     ~/.vim: vim
+    ~/.vim-wiki: wiki
+    ~/wiki_html/theme.css: wiki/theme.css
     ~/.vimrc: vimrc
     ~/.config/nvim: nvim
     ~/.inputrc: inputrc
