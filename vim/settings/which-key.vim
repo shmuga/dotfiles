@@ -26,7 +26,7 @@ let g:which_key_map['g'] = [':Gfiles?'                                       ,  
 let g:which_key_map['q'] = [ '<Plug>(coc-fix-current)'                       ,  'quickfix' ]
 let g:which_key_map['r'] = [':History'                                       ,  'recent files ']
 let g:which_key_map['u'] = [ ':UndotreeToggle'                               ,  'undo tree']
-let g:which_key_map['w'] = [ ':call WindowSwap#EasyWindowSwap()'             ,  'move window' ]
+let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'             ,  'move window' ]
 let g:which_key_map['z'] = [ 'Goyo'                                          ,  'zen' ]
 
 
@@ -187,10 +187,13 @@ let g:which_key_map.l = {
       \ 'Z' : [':CocEnable'                          , 'enable CoC'],
       \ }
 
-let g:which_key_map.W = {
+let g:which_key_map.w = {
       \ 'name' : '+wiki',
       \ 'i' : [':VimwikiIndex', 'index'],
+      \ 'c' : [':Vimwiki2HTML', 'compile'],
+      \ 'C' : [':VimwikiAll2HTML', 'compile all'],
       \ 'd' : [':VimwikiMakeDiaryNote', 'diary'],
+      \ 'D' : [':VimwikiDiaryGenerateLinks', 'diary generate links'],
       \ 'j' : [':VimwikiNextTask', 'next task'],
       \ 'k' : [':VimwikiPrevTask', 'prev task'],
       \ 't' : [':VimwikiToggleListItem', 'toggle list'],

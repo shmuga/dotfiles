@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans&display=swap" />
+    <link rel="stylesheet" href="%root_path%theme.css" />
+    <title>%title%</title>
+    <script src="/search/tools.js"></script>
+    <script charset="utf-8">
+      window.setDescription = (text) => {
+        document.getElementById('page-description').textContent = text;
+        document.getElementById('page-description').style.display = 'block';
+      }
+      window.setDiagram = async () => {
+        await import('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js');
+        mermaid.init({noteMargin: 10}, ".mermaid");
+      }
+    </script>
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>%title%</h1>
+      <p id="page-description" style="display: none"></p>
+      <span id="page-date">Page created on %date%</span>
+
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/search">Search</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      %content%
+    </main>
+  </body>
+</html>
