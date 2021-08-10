@@ -101,3 +101,10 @@ hi!   link   yamlKey              Constant
 hi!   link   yamlAnchor           Constant
 hi!   link   yamlAlias            Constant
 hi!   link   yamlDocumentHeader   String
+
+" Rust
+hi!   link   rustCommentLineDoc  Comment
+
+" Coq
+hi! link CoqtailChecked Comment
+hi! link CoqtailSent Folded

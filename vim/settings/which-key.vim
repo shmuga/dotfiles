@@ -70,7 +70,7 @@ let g:which_key_map.s = {
       \ 's' : [':Rg'                                    ,  'search Rg'],
       \ 'S' : [':CocList snippets'                      ,  'snippets'],
       \ 't' : [':Tags'                                  ,  'tags (projet)'],
-      \ 'T' : [':BTags'                                 ,  'tags'],
+      \ 'T' : [':Floaterms'                             ,  'float terms'],
       \ 'w' : [':Windows'                               ,  'search windows'],
       \ 'y' : [':CocFzfList yank'                       ,  'clipboard'],
       \ }
@@ -150,6 +150,14 @@ let g:which_key_map.T = {
       \ 'T' : [':FloatermNew top'                               , 'top'],
       \ }
 
+let g:which_key_map.L = {
+      \ 'name' : '+Leetcode' ,
+      \ 'p' : [':call LeetcodePreview()'                       , 'preview task'],
+      \ 'e' : [':call LeetcodeEdit()'                          , 'edit task'],
+      \ 't' : [':call LeetcodeTest()'                          , 'test task'],
+      \ 's' : [':call LeetcodeStat()'                          , 'stats'],
+      \ 'x' : [':call LeetcodeSubmit()'                        , 'eXecute task'],
+      \ }
 let g:which_key_map.l = {
       \ 'name' : '+lsp' ,
       \ '.' : [':CocConfig'                          , 'config'],
