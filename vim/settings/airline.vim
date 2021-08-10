@@ -10,3 +10,4 @@ let g:airline_skip_empty_sections = 1
 let g:airline#extensions#nvimlsp#enabled= 0
 let g:airline#extensions#branch#enabled= 0
 let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#whitespace#enabled = 0
