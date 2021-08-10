@@ -15,7 +15,6 @@ Plug 'junegunn/goyo.vim'
 
 " ------------------- [TerminalGit] -------------------
 Plug 'wincent/terminus'
-Plug 'voldikss/vim-floaterm'
 
 " ------------------- [Git] -------------------
 Plug 'tpope/vim-git'
@@ -44,6 +43,8 @@ Plug 'hyhugh/coc-erlang_ls', {'do': 'yarn install --frozen-lockfile'}
 Plug 'honza/vim-snippets'
 Plug 'liuchengxu/vista.vim'
 Plug 'metakirby5/codi.vim'
+Plug 'rust-lang/rust.vim'
+Plug 'whonore/Coqtail'
 
 " ------------------- [Stylechecks] -------------------
 Plug 'editorconfig/editorconfig-vim'
@@ -73,6 +74,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf' " see coc.vim
 Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release/rpc' }
+Plug 'voldikss/fzf-floaterm'
+Plug 'voldikss/vim-floaterm'
 Plug 'brooth/far.vim'
 
 " ------------------- [Text objects] -------------------
