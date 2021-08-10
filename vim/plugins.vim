@@ -2,13 +2,13 @@ source ~/.vim/plug/plug.vim
 source ~/.vim/settings/before.vim
 
 call plug#begin('~/.vim/plugged')
+Plug 'dstein64/vim-startuptime'
 " ------------------- [Appearence] -------------------
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'RRethy/vim-illuminate'
 Plug 'talek/obvious-resize'
 Plug 'Yggdroot/indentLine'
-Plug 'ashisha/image.vim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'wesQ3/vim-windowswap'
 Plug 'junegunn/goyo.vim'
@@ -29,6 +29,7 @@ Plug 'janko/vim-test'
 Plug 'thinca/vim-quickrun'
 Plug 'tpope/vim-dispatch'
 Plug 'skywind3000/asyncrun.vim'
+Plug 'ruanyl/coverage.vim'
 
 " ------------------- [Syntax] -------------------
 Plug 'sheerun/vim-polyglot'
@@ -40,7 +41,6 @@ Plug 'sevko/vim-nand2tetris-syntax'
 Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'hyhugh/coc-erlang_ls', {'do': 'yarn install --frozen-lockfile'}
-Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'liuchengxu/vista.vim'
 Plug 'metakirby5/codi.vim'
@@ -51,8 +51,6 @@ Plug 'dense-analysis/ale'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 
 " ------------------- [Project] -------------------
-Plug 'jistr/vim-nerdtree-tabs'
-Plug 'scrooloose/nerdtree'
 Plug 'xolox/vim-misc'
 Plug 'thaerkh/vim-workspace'
 Plug 'jceb/vim-orgmode'
@@ -100,6 +98,7 @@ Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'vim-scripts/sudo.vim'
 Plug 'chrisbra/Colorizer' " colors inline
 Plug 'airblade/vim-rooter' " auto change folder
+Plug 'embear/vim-localvimrc'
 
 
 " ------------------- [TPope perls] -------------------

@@ -2,6 +2,7 @@ vim/plugged
 vim/.netrwhist
 vim/sessions
 vim/backups
+vim/undodir
 tmux/resurrect
 .undodir
 tmux/plugins/

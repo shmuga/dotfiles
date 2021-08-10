@@ -1,3 +1,4 @@
+.lvimrc
 *~
 .idea
 .DS_Store
@@ -11,3 +12,4 @@ ehthumbs.db
 Thumbs.db
 .undodir/*
 .exrc
+.vim

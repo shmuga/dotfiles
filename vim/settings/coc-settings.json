@@ -17,10 +17,13 @@
   "list.indicator": ">",
   "list.selectedSignText": " ",
 
+  // coverage
+  "coverage.uncoveredSign.text": "⁍",
+
   // explorer
   "explorer.width": 30,
   "explorer.file.root.template": "[icon] [git] [hidden & 1][root]",
-  "explorer.file.autoReveal": true,
+  "explorer.file.reveal.auto": true,
   "explorer.revealWhenOpen": true,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
