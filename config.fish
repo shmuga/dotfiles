@@ -6,12 +6,11 @@ source ~/.fish/functions.fish
 load_folder $HOME/.fish.before
 
 # ------------------- [PLUGINS] -------------------
-source ~/.fish/fisher/fisher.fish
+source ~/.fish/settings.fish
 source ~/.fish/node.fish
 source ~/.fish/alias.fish
 
 # ------------------- [CUSTOM SETTINGS] -------------------
 set TERM xterm-256color
-
 # ------------------- [AFTER] -------------------
 load_folder $HOME/.fish.after
