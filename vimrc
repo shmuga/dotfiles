@@ -109,6 +109,7 @@ set smartcase       " ...unless we type a capital
 
 " ------------------- [Custom] -------------------
 so ~/.vim/settings.vim
+so ~/.vim/settings.lua
 
 " ------------------- [After] -------------------
 if filereadable(expand("~/.vimrc.after"))
