@@ -108,3 +108,8 @@ hi!   link   rustCommentLineDoc  Comment
 " Coq
 hi! link CoqtailChecked Comment
 hi! link CoqtailSent Folded
+
+" Git signs
+hi   GitSignsAdd      ctermbg=none   ctermfg=28
+hi   GitSignsChange   ctermbg=none   ctermfg=208
+hi   GitSignsDelete   ctermbg=none   ctermfg=196

@@ -93,13 +93,13 @@ let g:which_key_map.m = {
 
 let g:which_key_map.h = {
       \ 'name' : '+hunks' ,
-      \ 'j' : ['<Plug>(GitGutterNextHunk)'         , 'next hunk'],
-      \ 'k' : ['<Plug>(GitGutterPrevHunk)'         , 'prev hunk'],
-      \ 'l' : [':GitGutterLineHighlightsToggle'    , 'line highlight hunks'],
-      \ 'p' : ['<Plug>(GitGutterPreviewHunk)'      , 'preview hunk'],
-      \ 's' : ['<Plug>(GitGutterStageHunk)'        , 'stage hunk'],
-      \ 't' : [':GitGutterSignsToggle'             , 'toggle signs'],
-      \ 'u' : ['<Plug>(GitGutterUndoHunk)'         , 'undo hunk'],
+      \ 'j' : [':Gitsigns next_hunk'       , ' next hunk'],
+      \ 'k' : [':Gitsigns prev_hunk'       , ' prev hunk'],
+      \ 'p' : [':Gitsigns preview_hunk'    , ' preview hunk'],
+      \ 's' : [':Gitsigns stage_hunk'      , ' stage hunk'],
+      \ 'u' : [':Gitsigns undo_stage_hunk' , ' undo hunk'],
+      \ 'r' : [':Gitsigns reset_hunk'      , ' reset hunk'],
+      \ 'b' : [':Gitsigns blame_line'      , ' blame'],
       \ }
 
 let g:which_key_map.g = {
