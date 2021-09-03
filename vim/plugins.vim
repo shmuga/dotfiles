@@ -37,6 +37,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'rust-lang/rust.vim'
 Plug 'sevko/vim-nand2tetris-syntax'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " ------------------- [LS/Completitions] -------------------
 Plug 'mattn/emmet-vim'
