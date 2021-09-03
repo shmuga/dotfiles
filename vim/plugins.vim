@@ -89,7 +89,7 @@ Plug 'terryma/vim-expand-region' " +
 
 " ------------------- [Other] -------------------
 Plug 'AndrewRadev/splitjoin.vim' " gS / gJ one line
-Plug 'Raimondi/delimitMate' " auto close quotes/parenth etc.
+Plug 'jiangmiao/auto-pairs'
 Plug 'godlygeek/tabular' " align items by symbol :Tabularize /<pattern>/
 Plug 'vim-scripts/camelcasemotion' " motion W/B/E camel case variables
 Plug 'mg979/vim-visual-multi', {'branch': 'master'} " multi-cursors C+N, q to skip
