@@ -7,7 +7,6 @@ let g:coc_global_extensions = [
   \ 'coc-lists',
   \ 'coc-emmet',
   \ 'coc-tasks',
-  \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-floaterm',
   \ 'coc-fzf-preview',
