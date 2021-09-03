@@ -42,7 +42,7 @@ let g:which_key_map.a = {
       \ 'P' : [':ToggleWorkspace'          ,  'project workspace'],
       \ 's' : [':call ToggleSpellCheck()'  ,  'spell check'],
       \ 'S' : ['z='                        ,  'spell check fix'],
-      \ 'v' : [':so %<CR>'                 ,  'vim reload'],
+      \ 'v' : [':so $MYVIMRC<CR>'          ,  'vim reload'],
       \ 'w' : [':StripWhitespace'          ,  'strip whitespace'],
       \ 'W' : [':StripTrailingWhitespaces' ,  'strip whitespace'],
       \ }

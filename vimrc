@@ -5,7 +5,7 @@ endif
 
 " ------------------- [General] -------------------
 set nocompatible                "Vim no vi
-set number                      "Line numbers are good
+set nonumber                      "Line numbers are good
 set numberwidth=2               "Width of the gutter area
 set backspace=indent,eol,start  "Allow backspace in insert mode
 set history=3000                "Store lots of :cmdline history
