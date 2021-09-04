@@ -4,8 +4,7 @@ source ~/.vim/settings/before.vim
 call plug#begin('~/.vim/plugged')
 Plug 'dstein64/vim-startuptime'
 " ------------------- [Appearence] -------------------
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'hoob3rt/lualine.nvim'
 Plug 'RRethy/vim-illuminate'
 Plug 'talek/obvious-resize'
 Plug 'Yggdroot/indentLine'
@@ -80,6 +79,10 @@ Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release/rpc' }
 Plug 'voldikss/fzf-floaterm'
 Plug 'voldikss/vim-floaterm'
 Plug 'brooth/far.vim'
+
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 " ------------------- [Text objects] -------------------
 Plug 'wellle/targets.vim' " a(argument) t(tags) () [] <> {} , . ; : + - = ~ _ * # / | \ & $
