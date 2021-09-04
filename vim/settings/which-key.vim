@@ -16,24 +16,22 @@ let g:which_key_map =  {}
 " Define a separator
 let g:which_key_sep = '→'
 
-let g:which_key_map[' '] = [ ':Files'                                        ,  'search files' ]
-let g:which_key_map['-'] = [ '<C-W>s'                                        ,  'split horizontal']
-let g:which_key_map['='] = [ '<C-W>v'                                        ,  'split vertical']
-let g:which_key_map['/'] = [ ':let @/ = ""'                                  ,  'remove search highlight' ]
-let g:which_key_map['e'] = [ ':CocCommand explorer --toggle --sources=file+' ,  'explorer' ]
-let g:which_key_map['E'] = [ ':NERDTreeToggle'                               ,  'explorer (nerd)' ]
-let g:which_key_map['g'] = [':Gfiles?'                                       ,  'git files ']
-let g:which_key_map['q'] = [ '<Plug>(coc-fix-current)'                       ,  'quickfix' ]
-let g:which_key_map['r'] = [':History'                                       ,  'recent files ']
-let g:which_key_map['u'] = [ ':UndotreeToggle'                               ,  'undo tree']
-let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'             ,  'move window' ]
-let g:which_key_map['z'] = [ 'Goyo'                                          ,  'zen' ]
+let g:which_key_map[' '] = [ ':Telescope git_files'                         , 'search files' ]
+let g:which_key_map['-'] = [ '<C-W>s'                                        , 'split horizontal']
+let g:which_key_map['|'] = [ '<C-W>v'                                        , 'split vertical']
+let g:which_key_map['/'] = [ ':let @/ = ""'                                  , 'remove search highlight' ]
+let g:which_key_map['e'] = [ ':CocCommand explorer --toggle --sources=file+' , 'explorer' ]
+let g:which_key_map['g'] = [ ':Telescope git_files'                           , 'git files ']
+let g:which_key_map['q'] = [ '<Plug>(coc-fix-current)'                       , 'quickfix' ]
+let g:which_key_map['r'] = [ ':Telescope oldfiles'                            , 'recent files ']
+let g:which_key_map['u'] = [ ':UndotreeToggle'                               , 'undo tree']
+let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'             , 'move window' ]
+let g:which_key_map['z'] = [ 'Goyo'                                          , 'zen' ]
 
 
 let g:which_key_map.a = {
       \ 'name' : '+actions' ,
       \ 'c' : [':ColorizerToggle'          ,  'colorizer'],
-      \ 'e' : [':CocCommand explorer'      ,  'explorer'],
       \ 'h' : [':SyntaxQuery'              ,  'highligh group'],
       \ 'm' : [':MarkdownPreview'          ,  'markdown preview'],
       \ 'M' : [':MarkdownPreviewStop'      ,  'markdown preview stop'],
@@ -49,29 +47,22 @@ let g:which_key_map.a = {
 
 let g:which_key_map.s = {
       \ 'name' : '+search' ,
-      \ '/' : [':History/'                              ,  'history'],
-      \ ';' : [':Commands'                              ,  'commands'],
-      \ '?' : [':Helptags'                              ,  'help tags'] ,
-      \ 'a' : [':Ag'                                    ,  'Ag text'],
-      \ 'b' : [':CocCommand fzf-preview.BufferLines'    ,  'buffer current'],
-      \ 'B' : [':CocCommand fzf-preview.Buffers'        ,  'buffers'],
-      \ 'c' : [':Commits'                               ,  'commits'],
-      \ 'C' : [':BCommits'                              ,  'commits buffer'],
-      \ 'd' : [':CocCommand fzf-preview.DirectoryFiles' ,  'directories'],
-      \ 'f' : [':CocCommand fzf-preview.ProjectFiles'   ,  'files'],
-      \ 'g' : [':GFiles?'                               ,  'git files (modified)'],
-      \ 'G' : [':GFiles'                                ,  'git files'],
-      \ 'h' : [':History'                               ,  'file history'],
-      \ 'H' : [':History:'                              ,  'command history'],
-      \ 'l' : [':Lines'                                 ,  'lines'] ,
-      \ 'M' : [':Maps'                                  ,  'normal maps'] ,
-      \ 'q' : [':CocCommand fzf-preview.QuickFix'       ,  'quickfix list'],
-      \ 'r' : [':History'                               ,  'recent files '],
-      \ 's' : [':Rg'                                    ,  'search Rg'],
+      \ '?' : [':Telescope help_tags'                   ,  'help tags'] ,
+      \ 'b' : [':Telescope buffers'                     ,  'buffers'],
+      \ 'c' : [':Telescope git_commits'                 ,  'commits'],
+      \ 'C' : [':Telescope git_bcommits'                ,  'commits buffer'],
+      \ 'f' : [':Telescope find_files'                  ,  'files'],
+      \ 'g' : [':Telescope git_status'                  ,  'git files (modified)'],
+      \ 'G' : [':Telescopr git_files'                   ,  'git files'],
+      \ 'h' : [':Telescope commands'                    ,  'command history'],
+      \ 'm' : [':Telescope man_pages'                   ,  'man pages'] ,
+      \ 'M' : [':Telescope keymaps'                     ,  'normal maps'] ,
+      \ 'q' : [':Telescope quickfix'                    ,  'quickfix list'],
+      \ 'r' : [':Telescope oldfiles'                    ,  'recent files '],
+      \ 's' : [':Telescope live_grep'                   ,  'search Rg'],
       \ 'S' : [':CocList snippets'                      ,  'snippets'],
-      \ 't' : [':Tags'                                  ,  'tags (projet)'],
+      \ 't' : [':Telescope tags'                        ,  'tags (projet)'],
       \ 'T' : [':Floaterms'                             ,  'float terms'],
-      \ 'w' : [':Windows'                               ,  'search windows'],
       \ 'y' : [':CocFzfList yank'                       ,  'clipboard'],
       \ }
 
@@ -121,7 +112,7 @@ let g:which_key_map.g = {
       \ 'P' : [':Git pull'                         , 'pull'],
       \ 'r' : [':GRemove'                          , 'remove'],
       \ 'R' : [':diffget //3'                      , 'take RIGHT'],
-      \ 's' : [':Gstatus'                          , 'status'],
+      \ 's' : [':Git'                              , 'status'],
       \ 'S' : [':CocCommand fzf-preview.GitStatus' , 'status'],
       \ 'v' : [':GV'                               , 'view commits'],
       \ 'V' : [':GV!'                              , 'view buffer commits'],
