@@ -33,7 +33,7 @@ function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
   else
-    call CocAction('doHover')
+    call CocActionAsync('doHover')
   endif
 endfunction
 
@@ -49,10 +49,11 @@ endfunction
 nnoremap <silent> go :call <SID>show_documentation()<CR>
 
 " nmap grn <Plug>(coc-rename)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gr :Telescope coc references<CR>
 nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gt <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gt :Telescope coc type_definitions<CR>
+nmap <silent> gi :Telescope coc implementations<CR>
+nmap <silent> gl :Telescope coc workspace_symbols<CR>
 " nmap <silent> gfx :CocFix<CR>
 
 
