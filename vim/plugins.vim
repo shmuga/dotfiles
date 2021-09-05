@@ -12,7 +12,6 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'wesQ3/vim-windowswap'
 Plug 'junegunn/goyo.vim'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
-
 " ------------------- [TerminalGit] -------------------
 Plug 'wincent/terminus'
 
@@ -68,21 +67,17 @@ Plug 'itchyny/calendar.vim'
 
 " ------------------- [Search] -------------------
 Plug 'nelstrom/vim-visual-star-search' " search selection using *
-Plug 'rking/ag.vim' " fast search of text :Ag
 Plug 'vim-scripts/IndexedSearch'
-Plug 'skwp/greplace.vim' " :Greplace
 Plug 'easymotion/vim-easymotion' " see easymotion.vim
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'antoinemadec/coc-fzf' " see coc.vim
-Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release/rpc' }
 Plug 'voldikss/fzf-floaterm'
 Plug 'voldikss/vim-floaterm'
 Plug 'brooth/far.vim'
 
+" Telescope and dependencies
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'fannheyward/telescope-coc.nvim'
 
 " ------------------- [Text objects] -------------------
 Plug 'wellle/targets.vim' " a(argument) t(tags) () [] <> {} , . ; : + - = ~ _ * # / | \ & $

@@ -16,14 +16,15 @@ let g:which_key_map =  {}
 " Define a separator
 let g:which_key_sep = '→'
 
-let g:which_key_map[' '] = [ ':Telescope git_files'                         , 'search files' ]
+let g:which_key_map[' '] = [ ':Telescope find_files'                         , 'search files' ]
 let g:which_key_map['-'] = [ '<C-W>s'                                        , 'split horizontal']
 let g:which_key_map['|'] = [ '<C-W>v'                                        , 'split vertical']
 let g:which_key_map['/'] = [ ':let @/ = ""'                                  , 'remove search highlight' ]
 let g:which_key_map['e'] = [ ':CocCommand explorer --toggle --sources=file+' , 'explorer' ]
 let g:which_key_map['g'] = [ ':Telescope git_files'                           , 'git files ']
 let g:which_key_map['q'] = [ '<Plug>(coc-fix-current)'                       , 'quickfix' ]
-let g:which_key_map['r'] = [ ':Telescope oldfiles'                            , 'recent files ']
+let g:which_key_map['r'] = [ ':Telescope coc mru'                            , 'recent files ']
+let g:which_key_map['R'] = [ ':Telescope oldfiles'                            , 'recent files ']
 let g:which_key_map['u'] = [ ':UndotreeToggle'                               , 'undo tree']
 let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'             , 'move window' ]
 let g:which_key_map['z'] = [ 'Goyo'                                          , 'zen' ]
@@ -63,7 +64,7 @@ let g:which_key_map.s = {
       \ 'S' : [':CocList snippets'                      ,  'snippets'],
       \ 't' : [':Telescope tags'                        ,  'tags (projet)'],
       \ 'T' : [':Floaterms'                             ,  'float terms'],
-      \ 'y' : [':CocFzfList yank'                       ,  'clipboard'],
+      \ 'y' : [':CocList yank'                          ,  'clipboard'],
       \ }
 
 let g:which_key_map.f = {
@@ -96,7 +97,6 @@ let g:which_key_map.h = {
 let g:which_key_map.g = {
       \ 'name' : '+git' ,
       \ 'a' : [':Git add .'                        , 'add all'],
-      \ 'A' : [':CocCommand fzf-preview.GitStatus' , 'actions'],
       \ 'b' : [':Git blame'                        , 'blame'],
       \ 'B' : [':GBrowse'                          , 'browse'],
       \ 'c' : [':Git commit'                       , 'commit'],
@@ -113,7 +113,7 @@ let g:which_key_map.g = {
       \ 'r' : [':GRemove'                          , 'remove'],
       \ 'R' : [':diffget //3'                      , 'take RIGHT'],
       \ 's' : [':Git'                              , 'status'],
-      \ 'S' : [':CocCommand fzf-preview.GitStatus' , 'status'],
+      \ 'S' : [':Telescope git_status'             , 'status'],
       \ 'v' : [':GV'                               , 'view commits'],
       \ 'V' : [':GV!'                              , 'view buffer commits'],
       \ }
@@ -149,41 +149,37 @@ let g:which_key_map.L = {
       \ 's' : [':call LeetcodeStat()'                          , 'stats'],
       \ 'x' : [':call LeetcodeSubmit()'                        , 'eXecute task'],
       \ }
+
 let g:which_key_map.l = {
       \ 'name' : '+lsp' ,
-      \ '.' : [':CocConfig'                          , 'config'],
-      \ ';' : ['<Plug>(coc-refactor)'                , 'refactor'],
-      \ 'a' : ['<Plug>(coc-codeaction)'              , 'code action'],
-      \ 'A' : ['<Plug>(coc-codeaction-selected)'     , 'selected action'],
-      \ 'b' : [':CocNext'                            , 'next action'],
-      \ 'B' : [':CocPrev'                            , 'prev action'],
-      \ 'c' : [':CocFzfList commands'                   , 'commands'],
-      \ 'd' : ['<Plug>(coc-definition)'              , 'definition'],
-      \ 'D' : ['<Plug>(coc-declaration)'             , 'declaration'],
-      \ 'e' : [':CocFzfList extensions'                 , 'extensions'],
-      \ 'f' : ['<Plug>(coc-format-selected)'         , 'format selected'],
-      \ 'F' : ['<Plug>(coc-format)'                  , 'format'],
-      \ 'h' : ['<Plug>(coc-float-hide)'              , 'hide'],
-      \ 'i' : ['<Plug>(coc-implementation)'          , 'implementation'],
-      \ 'I' : [':CocFzfList diagnostics'                , 'diagnostics'],
-      \ 'j' : ['<Plug>(coc-float-jump)'              , 'float jump'],
-      \ 'l' : ['<Plug>(coc-codelens-action)'         , 'code lens'],
-      \ 'n' : ['<Plug>(coc-diagnostic-next)'         , 'next diagnostic'],
-      \ 'N' : ['<Plug>(coc-diagnostic-next-error)'   , 'next error'],
-      \ 'o' : [':Vista!!'                            , 'outline'],
-      \ 'O' : [':CocFzfList outline'                    , 'search outline'],
-      \ 'p' : ['<Plug>(coc-diagnostic-prev)'         , 'prev diagnostic'],
-      \ 'P' : ['<Plug>(coc-diagnostic-prev-error)'   , 'prev error'],
-      \ 'q' : ['<Plug>(coc-fix-current)'             , 'quickfix'],
-      \ 'r' : ['<Plug>(coc-references)'              , 'references'],
-      \ 'R' : ['<Plug>(coc-rename)'                  , 'rename'],
-      \ 's' : [':CocFzfList -I symbols'                 , 'references'],
-      \ 'S' : [':CocFzfList snippets'                   , 'snippets'],
-      \ 't' : ['<Plug>(coc-type-definition)'         , 'type definition'],
-      \ 'u' : [':CocListResume'                      , 'resume list'],
-      \ 'U' : [':CocUpdate'                          , 'update CoC'],
-      \ 'z' : [':CocDisable'                         , 'disable CoC'],
-      \ 'Z' : [':CocEnable'                          , 'enable CoC'],
+      \ '.' : [':CocConfig'                        ,  'config'],
+      \ ';' : ['<Plug>(coc-refactor)'              ,  'refactor'],
+      \ 'a' : ['<Plug>(coc-codeaction)'            ,  'code action'],
+      \ 'A' : ['<Plug>(coc-codeaction-selected)'    ,  'selected action'],
+      \ 'c' : [':Telescope coc commands'           ,  'commands'],
+      \ 'd' : [':Telescope coc definitions'        ,  'definition'],
+      \ 'D' : [':Telescope coc declarations'       ,  'declaration'],
+      \ 'e' : [':CocList extensions'               ,  'extensions'],
+      \ 'f' : ['<Plug>(coc-format-selected)'       ,  'format selected'],
+      \ 'F' : ['<Plug>(coc-format)'                ,  'format'],
+      \ 'h' : ['<Plug>(coc-float-hide)'            ,  'hide'],
+      \ 'i' : [':Telescope coc implementations'    ,  'implementation'],
+      \ 'I' : [':Telescope coc diagnostics'        ,  'diagnostics'],
+      \ 'j' : ['<Plug>(coc-float-jump)'            ,  'float jump'],
+      \ 'l' : ['<Plug>(coc-codelens-action)'       ,  'code lens'],
+      \ 'n' : ['<Plug>(coc-diagnostic-next)'       ,  'next diagnostic'],
+      \ 'N' : ['<Plug>(coc-diagnostic-next-error)' ,  'next error'],
+      \ 'o' : [':Vista!!'                          ,  'outline'],
+      \ 'O' : [':Telescope coc workspace_symbols'  ,  'search outline'],
+      \ 'p' : ['<Plug>(coc-diagnostic-prev)'       ,  'prev diagnostic'],
+      \ 'P' : ['<Plug>(coc-diagnostic-prev-error)' ,  'prev error'],
+      \ 'q' : ['<Plug>(coc-fix-current)'           ,  'quickfix'],
+      \ 'r' : [':Telescope coc references'         ,  'references'],
+      \ 'R' : ['<Plug>(coc-rename)'                ,  'rename'],
+      \ 't' : ['<Plug>(coc-type-definition)'       ,  'type definition'],
+      \ 'U' : [':CocUpdate'                        ,  'update CoC'],
+      \ 'z' : [':CocDisable'                       ,  'disable CoC'],
+      \ 'Z' : [':CocEnable'                        ,  'enable CoC'],
       \ }
 
 let g:which_key_map.w = {

@@ -1,1 +1,1 @@
-require('telescope');
+require('telescope').load_extension('coc');
