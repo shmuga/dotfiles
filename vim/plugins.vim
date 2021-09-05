@@ -5,6 +5,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'dstein64/vim-startuptime'
 " ------------------- [Appearence] -------------------
 Plug 'hoob3rt/lualine.nvim'
+Plug 'SmiteshP/nvim-gps'
 Plug 'RRethy/vim-illuminate' "hightlight under the cursor
 Plug 'talek/obvious-resize'
 Plug 'Yggdroot/indentLine'
@@ -65,7 +66,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 " ------------------- [Search] -------------------
 Plug 'nelstrom/vim-visual-star-search' " search selection using *
 Plug 'vim-scripts/IndexedSearch'
-Plug 'easymotion/vim-easymotion' " see easymotion.vim
+Plug 'phaazon/hop.nvim' " easymotion
 Plug 'brooth/far.vim' " find and replace
 " Telescope and dependencies
 Plug 'nvim-telescope/telescope.nvim'
@@ -106,7 +107,7 @@ Plug 'tpope/vim-commentary' " gc / gcc
 
 " ------------------- [Icons] -------------------
 " should be at the end
-Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
 filetype plugin indent on
 call plug#end()
 
