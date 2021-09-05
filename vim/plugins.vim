@@ -37,7 +37,6 @@ Plug 'ruanyl/coverage.vim'
 
 " ------------------- [Syntax] -------------------
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'sheerun/vim-polyglot'
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'rust-lang/rust.vim'
 Plug 'sevko/vim-nand2tetris-syntax'
