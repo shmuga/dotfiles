@@ -94,7 +94,7 @@ Plug 'vim-scripts/sudo.vim'
 Plug 'chrisbra/Colorizer' " colors inline
 Plug 'airblade/vim-rooter' " auto change folder
 Plug 'embear/vim-localvimrc'
-
+Plug 'ThePrimeagen/vim-be-good'
 
 " ------------------- [TPope perls] -------------------
 Plug 'tpope/vim-endwise' " adds ending for if

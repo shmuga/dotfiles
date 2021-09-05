@@ -107,6 +107,9 @@ set hlsearch        " Highlight searches by default
 set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
+" ------------------- [Theme] -------------------
+colorscheme donotdisturb
+
 " ------------------- [Custom] -------------------
 so ~/.vim/settings.vim
 so ~/.vim/settings.lua
