@@ -5,23 +5,27 @@ call plug#begin('~/.vim/plugged')
 Plug 'dstein64/vim-startuptime'
 " ------------------- [Appearence] -------------------
 Plug 'hoob3rt/lualine.nvim'
-Plug 'RRethy/vim-illuminate'
+Plug 'RRethy/vim-illuminate' "hightlight under the cursor
 Plug 'talek/obvious-resize'
 Plug 'Yggdroot/indentLine'
 Plug 'liuchengxu/vim-which-key'
 Plug 'wesQ3/vim-windowswap'
 Plug 'junegunn/goyo.vim'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
-" ------------------- [TerminalGit] -------------------
+
+" ------------------- [Nvim essentails] -------------------
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-lua/popup.nvim'
+
+" ------------------- [Terminal] -------------------
 Plug 'wincent/terminus'
+Plug 'voldikss/fzf-floaterm'
+Plug 'voldikss/vim-floaterm'
 
 " ------------------- [Git] -------------------
 Plug 'tpope/vim-git'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'lewis6991/gitsigns.nvim', { 'branch': 'main' }
-Plug 'APZelos/blamer.nvim'
 Plug 'tpope/vim-fugitive'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " ------------------- [Tests] -------------------
 Plug 'janko/vim-test'
@@ -31,51 +35,39 @@ Plug 'skywind3000/asyncrun.vim'
 Plug 'ruanyl/coverage.vim'
 
 " ------------------- [Syntax] -------------------
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'sheerun/vim-polyglot'
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'rust-lang/rust.vim'
 Plug 'sevko/vim-nand2tetris-syntax'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'whonore/Coqtail'
 
 " ------------------- [LS/Completitions] -------------------
 Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'hyhugh/coc-erlang_ls', {'do': 'yarn install --frozen-lockfile'}
 Plug 'honza/vim-snippets'
-Plug 'liuchengxu/vista.vim'
-Plug 'metakirby5/codi.vim'
-Plug 'rust-lang/rust.vim'
-Plug 'whonore/Coqtail'
+Plug 'liuchengxu/vista.vim' " outline on the right
 
 " ------------------- [Stylechecks] -------------------
 Plug 'editorconfig/editorconfig-vim'
 Plug 'dense-analysis/ale'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 
-" ------------------- [Project] -------------------
+" ------------------- [Project/Workspace/Wiki] -------------------
 Plug 'xolox/vim-misc'
 Plug 'thaerkh/vim-workspace'
-Plug 'jceb/vim-orgmode'
-Plug 'ianding1/leetcode.vim'
-Plug 'benmills/vimux'
-Plug 'mattn/calendar-vim'
 Plug 'vim-scripts/utl.vim'
 Plug 'sjl/gundo.vim'
 Plug 'vimwiki/vimwiki'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-Plug 'itchyny/calendar.vim'
 
 " ------------------- [Search] -------------------
 Plug 'nelstrom/vim-visual-star-search' " search selection using *
 Plug 'vim-scripts/IndexedSearch'
 Plug 'easymotion/vim-easymotion' " see easymotion.vim
-Plug 'voldikss/fzf-floaterm'
-Plug 'voldikss/vim-floaterm'
-Plug 'brooth/far.vim'
-
+Plug 'brooth/far.vim' " find and replace
 " Telescope and dependencies
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'fannheyward/telescope-coc.nvim'
 
@@ -90,11 +82,10 @@ Plug 'terryma/vim-expand-region' " +
 
 " ------------------- [Other] -------------------
 Plug 'AndrewRadev/splitjoin.vim' " gS / gJ one line
-Plug 'jiangmiao/auto-pairs'
+Plug 'windwp/nvim-autopairs'
 Plug 'godlygeek/tabular' " align items by symbol :Tabularize /<pattern>/
 Plug 'vim-scripts/camelcasemotion' " motion W/B/E camel case variables
 Plug 'mg979/vim-visual-multi', {'branch': 'master'} " multi-cursors C+N, q to skip
-Plug 'Keithbsmiley/investigate.vim' " gK to search docs
 Plug 'christoomey/vim-tmux-navigator' " Ctrl + hjkl
 Plug 'mattn/webapi-vim' " for programming via web api
 Plug 'mbbill/undotree' " tree of undo - Space+u
