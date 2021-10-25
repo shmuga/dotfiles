@@ -24,7 +24,6 @@
   "explorer.width": 30,
   "explorer.file.root.template": "[icon] [git] [hidden & 1][root]",
   "explorer.file.reveal.auto": true,
-  "explorer.revealWhenOpen": true,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
   "explorer.icon.enableVimDevicons": false,
@@ -39,5 +38,6 @@
   "rust-analyzer.diagnostics.disabled": [
     "macro-error"
   ],
-  "rust-analyzer.updates.channel": "nightly"
+  "rust-analyzer.updates.channel": "nightly",
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/12.0.1/clangd_12.0.1/bin/clangd"
 }

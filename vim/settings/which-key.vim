@@ -150,6 +150,13 @@ let g:which_key_map.L = {
       \ 'x' : [':call LeetcodeSubmit()'                        , 'eXecute task'],
       \ }
 
+let g:which_key_map.C = {
+      \ 'name' : '+CF' ,
+      \ 'e' : [':call CFEdit()'                          , 'edit task'],
+      \ 't' : [':call CFTest()'                          , 'test task'],
+      \ 'x' : [':call CFSubmit()'                        , 'eXecute task'],
+      \ }
+
 let g:which_key_map.l = {
       \ 'name' : '+lsp' ,
       \ '.' : [':CocConfig'                        ,  'config'],
