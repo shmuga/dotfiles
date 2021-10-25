@@ -1,29 +1,44 @@
 #include <bits/stdc++.h>
-#define REP(i, n) for (int i = 0; (i) < (int)(n); ++ (i))
-#define REP3(i, m, n) for (int i = (m); (i) < (int)(n); ++ (i))
-#define REP_R(i, n) for (int i = (int)(n) - 1; (i) >= 0; -- (i))
-#define REP3R(i, m, n) for (int i = (int)(n) - 1; (i) >= (int)(m); -- (i))
-#define ALL(x) ::std::begin(x), ::std::end(x)
 using namespace std;
+
+template<typename A, typename B> ostream& operator<<(ostream &os, const pair<A, B> &p) { return os << '(' << p.first << ", " << p.second << ')'; }
+template<typename T_container, typename T = typename enable_if<!is_same<T_container, string>::value, typename T_container::value_type>::type> ostream& operator<<(ostream &os, const T_container &v) { os << '{'; string sep; for (const T &x : v) os << sep << x, sep = ", "; return os << '}'; }
+void dbg_out() { cerr << endl; }
+template<typename Head, typename... Tail> void dbg_out(Head H, Tail... T) { cerr << ' ' << H; dbg_out(T...); }
+#ifdef LOCAL
+#define dbg(...) cerr << "(" << #__VA_ARGS__ << "):", dbg_out(__VA_ARGS__)
+#else
+#define dbg(...)
+#endif
+
+#define ar array
+#define ll long long
+#define ld long double
+#define vl vector<long>
+#define vll vector<long long>
+#define sza(x) ((int)x.size())
+#define all(a) (a).begin(), (a).end()
+
+const int MAX_N = 1e5 + 5;
+const ll MOD = 1e9 + 7;
+const ll INF = 1e9;
+const ld EPS = 1e-9;
 
 const string YES = "YES";
 const string NO = "NO";
-bool solve(int n, const vector<int64_t> & a, const vector<int64_t> & b) {
-    // TODO: edit here
-    return true;
+
+
+void solve() {
+    
 }
 
 int main() {
-    std::ios::sync_with_stdio(false);
-    std::cin.tie(0);
-
-    int n;
-    cin >> n;
-    vector<int64_t> a(n), b(n);
-    REP (i, n) {
-        cin >> a[i] >> b[i];
+    ios_base::sync_with_stdio(0);
+    cin.tie(0); cout.tie(0);
+    int tc = 1;
+    // cin >> tc;
+    for (int t = 1; t <= tc; t++) {
+        // cout << "Case #" << t << ": ";
+        solve();
     }
-    auto ans = solve(n, a, b);
-    cout << (ans ? YES : NO) << endl;
-    return 0;
 }

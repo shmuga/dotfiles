@@ -2,6 +2,7 @@ source ~/.vim/plug/plug.vim
 source ~/.vim/settings/before.vim
 
 call plug#begin('~/.vim/plugged')
+
 Plug 'dstein64/vim-startuptime'
 " ------------------- [Appearence] -------------------
 Plug 'hoob3rt/lualine.nvim'
