@@ -6,3 +6,4 @@ vim/undodir
 tmux/resurrect
 .undodir
 tmux/plugins/
+dactyl/keymap.c

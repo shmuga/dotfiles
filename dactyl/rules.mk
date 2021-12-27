@@ -1,0 +1,18 @@
+BOOTLOADER = atmel-dfu
+BOOTMAGIC_ENABLE = no
+BACKLIGHT_ENABLE = no
+RGBLIGHT_ENABLE = no
+MOUSEKEY_ENABLE = no
+AUDIO_ENABLE = no
+EXTRAKEY_ENABLE = no
+
+
+SPLIT_KEYBOARD = yes
+OLED_ENABLE = yes
+OLED_DRIVER = SSD1306
+
+WPM_ENABLE = yes					# Enable word per minute counter
+LTO_ENABLE = yes
+
+SRC += oled_display.c
+EXTRAFLAGS += -flto
