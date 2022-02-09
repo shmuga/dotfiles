@@ -109,7 +109,11 @@ hi!   link   rustCommentLineDoc  Comment
 hi! link CoqtailChecked Comment
 hi! link CoqtailSent Folded
 
+"
+hi! link cStructure Keyword
+
 " Git signs
 hi   GitSignsAdd      ctermbg=none   ctermfg=28
 hi   GitSignsChange   ctermbg=none   ctermfg=208
 hi   GitSignsDelete   ctermbg=none   ctermfg=196
+
