@@ -112,6 +112,9 @@ hi! link CoqtailSent Folded
 "
 hi! link cStructure Keyword
 
+" Zig
+hi! link zigStructure Keyword
+
 " Git signs
 hi   GitSignsAdd      ctermbg=none   ctermfg=28
 hi   GitSignsChange   ctermbg=none   ctermfg=208

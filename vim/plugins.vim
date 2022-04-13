@@ -40,6 +40,7 @@ Plug 'ruanyl/coverage.vim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'rust-lang/rust.vim'
+Plug 'ziglang/zig.vim'
 Plug 'sevko/vim-nand2tetris-syntax'
 Plug 'whonore/Coqtail'
 
