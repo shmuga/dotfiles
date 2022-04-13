@@ -51,3 +51,7 @@ alias cloc='tokei'
 alias top='btm'
 alias cloc='tokei'
 alias find='fd'
+
+# Docker
+alias d='docker'
+alias dc='docker-compose'
