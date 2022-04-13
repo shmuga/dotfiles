@@ -95,13 +95,17 @@ const char* layer_name(void) {
     case 0:
       return PSTR("0let");
     case 1:
-      return PSTR("1sym");
+      return PSTR("1gam");
     case 2:
-      return PSTR("2num");
+      return PSTR("2sym");
     case 3:
-      return PSTR("3fun");
+      return PSTR("3num");
     case 4:
-      return PSTR("4med");
+      return PSTR("4fun");
+    case 5:
+      return PSTR("5med");
+    case 6:
+      return PSTR("6mag");
     default:
       return PSTR("UNDEF\n");
   }
@@ -121,15 +125,12 @@ bool oled_task_user(void) {
 
     return true;
   } else {
+    oled_on();
     oled_set_cursor(0, 4);                            
-    oled_write_P(PSTR("WPM"), false);
     oled_set_cursor(0, 6);                           
     /* sprintf(wpm_str, "%03d", get_current_wpm()); */  
     oled_write_P(PSTR("WPM: "), false);
     oled_write(get_u8_str(get_current_wpm(), '0'), false);
-    oled_write(wpm_str, false);                  
-    oled_set_cursor(0, 10);
-    oled_write_P(PSTR("Layer"), false);
     oled_set_cursor(0, 12);
     oled_write_P(layer_name(), false);
 
