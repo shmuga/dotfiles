@@ -8,7 +8,8 @@ require'lualine'.setup {
   },
   sections = {
     lualine_a = {'mode'},
-    lualine_b = { gps.get_location, condition = gps.is_available },
+    lualine_b = {{ gps.get_location, condition = gps.is_available }}, 
+    lualine_c = {{ 'filename', path = 1 }},
     lualine_x = {'fileformat', 'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location',  {'diagnostics', sources = {'coc', 'ale' }}}

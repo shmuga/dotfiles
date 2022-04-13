@@ -117,3 +117,6 @@ hi   GitSignsAdd      ctermbg=none   ctermfg=28
 hi   GitSignsChange   ctermbg=none   ctermfg=208
 hi   GitSignsDelete   ctermbg=none   ctermfg=196
 
+"Git 
+hi! link diffAdded GitSignsAdd
+hi! link diffRemoved GitSignsDelete

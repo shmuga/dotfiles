@@ -54,6 +54,8 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gt :Telescope coc type_definitions<CR>
 nmap <silent> gi :Telescope coc implementations<CR>
 nmap <silent> gl :Telescope coc workspace_symbols<CR>
+nmap <silent> gs :execute "Telescope current_buffer_fuzzy_find default_text='" .expand('<cword>')<CR>
+nmap <silent> Gs :execute "Telescope live_grep default_text=" .expand('<cword>')<CR>
 " nmap <silent> gfx :CocFix<CR>
 
 

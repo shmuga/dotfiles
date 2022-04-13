@@ -20,9 +20,8 @@ let g:which_key_map[' '] = [ ':Telescope find_files'                         , '
 let g:which_key_map['-'] = [ '<C-W>s'                                        , 'split horizontal']
 let g:which_key_map['|'] = [ '<C-W>v'                                        , 'split vertical']
 let g:which_key_map['/'] = [ ':let @/ = ""'                                  , 'remove search highlight' ]
-let g:which_key_map['e'] = [ ':CocCommand explorer --toggle --sources=file+' , 'explorer' ]
-let g:which_key_map['g'] = [ ':Telescope git_files'                           , 'git files ']
-let g:which_key_map['q'] = [ '<Plug>(coc-fix-current)'                       , 'quickfix' ]
+let g:which_key_map['e'] = [ ':CocCommand explorer --no-focus --reveal-when-open --no-toggle --sources=file+' , 'explorer' ]
+let g:which_key_map['E'] = [ ':CocCommand explorer --toggle --sources=file+' , 'explorer' ]
 let g:which_key_map['r'] = [ ':Telescope coc mru'                            , 'recent files ']
 let g:which_key_map['R'] = [ ':Telescope oldfiles'                            , 'recent files ']
 let g:which_key_map['u'] = [ ':UndotreeToggle'                               , 'undo tree']
@@ -49,7 +48,8 @@ let g:which_key_map.a = {
 let g:which_key_map.s = {
       \ 'name' : '+search' ,
       \ '?' : [':Telescope help_tags'                   ,  'help tags'] ,
-      \ 'b' : [':Telescope buffers'                     ,  'buffers'],
+      \ 'b' : [':Telescope current_buffer_fuzzy_find'                     ,  'current buffer'],
+      \ 'B' : [':Telescope buffers'                     ,  'buffers'],
       \ 'c' : [':Telescope git_commits'                 ,  'commits'],
       \ 'C' : [':Telescope git_bcommits'                ,  'commits buffer'],
       \ 'f' : [':Telescope find_files'                  ,  'files'],
@@ -157,6 +157,12 @@ let g:which_key_map.C = {
       \ 'x' : [':call CFSubmit()'                        , 'eXecute task'],
       \ }
 
+let g:which_key_map.q = {
+      \ 'name' : '+quickfix' ,
+      \ 'c' : ['cclose'                      , 'quickfix close'],
+      \ 'o' : ['copen'                       , 'quickfix open'],
+      \ }
+
 let g:which_key_map.l = {
       \ 'name' : '+lsp' ,
       \ '.' : [':CocConfig'                        ,  'config'],
@@ -176,7 +182,7 @@ let g:which_key_map.l = {
       \ 'l' : ['<Plug>(coc-codelens-action)'       ,  'code lens'],
       \ 'n' : ['<Plug>(coc-diagnostic-next)'       ,  'next diagnostic'],
       \ 'N' : ['<Plug>(coc-diagnostic-next-error)' ,  'next error'],
-      \ 'o' : [':Vista!!'                          ,  'outline'],
+      \ 'o' : [':Vista coc'                          ,  'outline'],
       \ 'O' : [':Telescope coc workspace_symbols'  ,  'search outline'],
       \ 'p' : ['<Plug>(coc-diagnostic-prev)'       ,  'prev diagnostic'],
       \ 'P' : ['<Plug>(coc-diagnostic-prev-error)' ,  'prev error'],

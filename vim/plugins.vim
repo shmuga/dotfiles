@@ -71,6 +71,7 @@ Plug 'brooth/far.vim' " find and replace
 " Telescope and dependencies
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'fannheyward/telescope-coc.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make', 'branch': 'main' }
 
 " ------------------- [Text objects] -------------------
 Plug 'wellle/targets.vim' " a(argument) t(tags) () [] <> {} , . ; : + - = ~ _ * # / | \ & $
@@ -100,6 +101,7 @@ Plug 'ThePrimeagen/vim-be-good'
 " ------------------- [TPope perls] -------------------
 Plug 'tpope/vim-endwise' " adds ending for if
 Plug 'tpope/vim-ragtag'
+Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-repeat' " better .
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired' " closes paired elements
