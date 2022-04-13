@@ -69,8 +69,9 @@ let g:which_key_map.s = {
 
 let g:which_key_map.f = {
       \ 'name' : '+find & replace' ,
-      \ 'f' : [':Farr --source=vimgrep'    , 'file'],
-      \ 'p' : [':Farr --source=rgnvim'     , 'project'],
+      \ 'w' : [":execute \"lua require('spectre').open_visual({select_word=true})\""      , 'word (project)'],
+      \ 'f' : [":execute \"lua require('spectre').open_file_search()\""                   , 'file'],
+      \ 'p' : [":execute \"lua require('spectre').open_visual()\""                        , 'project'],
       \ }
 
 let g:which_key_map.m = {

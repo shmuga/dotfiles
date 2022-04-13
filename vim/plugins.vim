@@ -17,6 +17,7 @@ Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
 
 " ------------------- [Nvim essentails] -------------------
 Plug 'nvim-lua/plenary.nvim'
+Plug 'windwp/nvim-spectre'
 Plug 'nvim-lua/popup.nvim'
 
 " ------------------- [Terminal] -------------------
@@ -68,7 +69,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 Plug 'nelstrom/vim-visual-star-search' " search selection using *
 Plug 'vim-scripts/IndexedSearch'
 Plug 'phaazon/hop.nvim' " easymotion
-Plug 'brooth/far.vim' " find and replace
 " Telescope and dependencies
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'fannheyward/telescope-coc.nvim'
