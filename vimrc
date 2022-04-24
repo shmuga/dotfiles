@@ -27,7 +27,7 @@ set pumheight=20
 syntax on                       "turn on syntax highlighting
 set ttimeoutlen=10
 set sessionoptions-=blank
-set shell=/bin/bash\ -i         "when fish is used this speeds up tmux navigator
+" set shell=/bin/bash\ -i         "when fish is used this speeds up tmux navigator
 
 " ------------------- [Cursor] -------------------
 set guicursor=n-v-c:block-Cursor
