@@ -2,15 +2,11 @@ set -x PATH $PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin /opt/X11/bin /usr
 
 source ~/.fish/functions.fish
 
-# ------------------- [BEFORE] -------------------
-load_folder $HOME/.fish.before
-
 # ------------------- [PLUGINS] -------------------
 source ~/.fish/settings.fish
 source ~/.fish/node.fish
 source ~/.fish/alias.fish
+source ~/.fish/env.fish
 
 # ------------------- [CUSTOM SETTINGS] -------------------
 set TERM xterm-256color
-# ------------------- [AFTER] -------------------
-load_folder $HOME/.fish.after
