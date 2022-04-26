@@ -28,6 +28,8 @@ syntax on                       "turn on syntax highlighting
 set ttimeoutlen=10
 set sessionoptions-=blank
 " set shell=/bin/bash\ -i         "when fish is used this speeds up tmux navigator
+set exrc
+set secure
 
 " ------------------- [Cursor] -------------------
 set guicursor=n-v-c:block-Cursor
