@@ -90,17 +90,16 @@
   svnd = svn dcommit
   svnl = svn log --oneline --show-commit
 	dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)%an <%ae>%C(reset) %C(magenta)%cr%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
-[format]
-  pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
-[mergetool]
-  prompt = false
-[mergetool "mvimdiff"]
-  cmd="mvim -c 'Gdiff' $MERGED"     # use fugitive.vim for 3-way merge
-  keepbackup=false
+# [format]
+#   pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
 [merge]
+  tool = fugitive
   summary = true
   verbosity = 1
-  tool = mvimdiff
+[mergetool]
+  keepbackup=false
+[mergetool "fugitive"]
+  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
 [apply]
   whitespace = nowarn
 [branch]
@@ -111,7 +110,7 @@
   default = upstream
 [core]
   autocrlf = false
-  editor = vim
+  editor = nvim
 	excludesfile = ~/.gitignore_global
 [advice]
   statusHints = false
@@ -137,6 +136,3 @@
 	recurseSubmodules = false
 [commit]
 	template = ~/.stCommitMsg
-[user]
-	email = mail.ormark@gmail.com
-	name = Mark Orel
