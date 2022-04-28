@@ -4,6 +4,7 @@ source ~/.fish/functions.fish
 
 # ------------------- [PLUGINS] -------------------
 source ~/.fish/fisher/fisher.fish
+source ~/.fish/fzf.config.fish
 source ~/.fish/settings.fish
 source ~/.fish/node.fish
 source ~/.fish/alias.fish
