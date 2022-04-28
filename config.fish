@@ -3,6 +3,7 @@ set -x PATH $PATH /usr/local/bin /usr/bin /bin /usr/sbin /sbin /opt/X11/bin /usr
 source ~/.fish/functions.fish
 
 # ------------------- [PLUGINS] -------------------
+source ~/.fish/fisher/fisher.fish
 source ~/.fish/settings.fish
 source ~/.fish/node.fish
 source ~/.fish/alias.fish
