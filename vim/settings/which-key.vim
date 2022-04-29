@@ -35,6 +35,7 @@ let g:which_key_map.a = {
       \ 'm' : [':MarkdownPreview'          ,  'markdown preview'],
       \ 'M' : [':MarkdownPreviewStop'      ,  'markdown preview stop'],
       \ 'n' : [':set nonumber!'            ,  'line-numbers'],
+      \ 'N' : [':set relativenumber!'      ,  'relative-line-numbers'],
       \ 'p' : [':call jobstart(["qlmanage", "-p", getline(".")])<CR>',  'preview in macOS'],
       \ 'P' : [':ToggleWorkspace'          ,  'project workspace'],
       \ 's' : [':call ToggleSpellCheck()'  ,  'spell check'],
