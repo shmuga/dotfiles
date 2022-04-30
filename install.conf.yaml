@@ -37,7 +37,6 @@
       relink: true
 
 - link:
-    ~/.ideavimrc: ideavimrc
     ~/.gitignore_global: gitignore_global
     ~/.gitconfig: gitconfig
     ~/.stCommitMsg: commit_template
@@ -57,7 +56,6 @@
     ~/wiki_html/theme.css: wiki/theme.css
     ~/.vimrc: vimrc
     ~/.config/nvim: nvim
-    ~/.inputrc: inputrc
     ~/.config/alacritty/alacritty.yml: alacritty.yaml
     ~/.config/bat/config: bat/bat.config
     ~/.config/bat/themes/DoNotDisturb.tmTheme: bat/DoNotDisturb.tmTheme
