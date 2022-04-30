@@ -1,5 +1,6 @@
 require('telescope').load_extension('coc')
 require('telescope').load_extension('fzf')
+require('telescope').load_extension('projects')
 require('telescope').setup{
   defaults = {
     -- path_display={"smart"}

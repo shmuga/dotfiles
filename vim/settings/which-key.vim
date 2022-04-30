@@ -60,6 +60,7 @@ let g:which_key_map.s = {
       \ 'M' : [':Telescope keymaps'                     ,  'normal maps'] ,
       \ 'q' : [':Telescope quickfix'                    ,  'quickfix list'],
       \ 'r' : [':Telescope oldfiles'                    ,  'recent files '],
+      \ 'p' : [':Telescope projects'                    ,  'recent files '],
       \ 's' : [':Telescope live_grep'                   ,  'search Rg'],
       \ 'S' : [':CocList snippets'                      ,  'snippets'],
       \ 't' : [':Telescope tags'                        ,  'tags (projet)'],

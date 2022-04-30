@@ -4,3 +4,4 @@ require('settings.lualine');
 require('settings.nvim-autopairs');
 require('settings.nvim-treesitter');
 require('settings.hop');
+require('settings.project');
