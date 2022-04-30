@@ -36,6 +36,7 @@ Plug 'thinca/vim-quickrun'
 Plug 'tpope/vim-dispatch'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'ruanyl/coverage.vim'
+Plug 'rcarriga/vim-ultest', { 'do': ':UpdateRemotePlugins' }
 
 " ------------------- [Syntax] -------------------
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}

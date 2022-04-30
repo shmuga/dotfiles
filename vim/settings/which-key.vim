@@ -122,11 +122,12 @@ let g:which_key_map.g = {
 
 let g:which_key_map.t = {
       \ 'name' : '+test' ,
-      \ 'n' : [':TestNearest' , 'nearest'],
-      \ 'f' : [':TestFile'    , 'file'],
-      \ 's' : [':TestSuite'   , 'suite'],
-      \ 'l' : [':TestLast'    , 'last'],
-      \ 'v' : [':TestVisit'   , 'go back'],
+      \ 'c' : [':UltestClear'    , 'clear'],
+      \ 'n' : [':UltestNearest'  , 'nearest'],
+      \ 'f' : [':Ultest'         , 'file'],
+      \ 's' : [':UltestSummary'  , 'summary'],
+      \ 'l' : [':UltestLast'     , 'last'],
+      \ 'o' : [':UltestOutput'   , 'output'],
       \ }
 
 let g:which_key_map.T = {
