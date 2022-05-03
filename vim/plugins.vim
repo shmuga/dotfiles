@@ -14,6 +14,7 @@ Plug 'liuchengxu/vim-which-key'
 Plug 'wesQ3/vim-windowswap'
 Plug 'junegunn/goyo.vim'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
+Plug 'kyazdani42/nvim-tree.lua'
 
 " ------------------- [Nvim essentails] -------------------
 Plug 'nvim-lua/plenary.nvim'

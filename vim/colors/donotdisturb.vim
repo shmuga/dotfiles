@@ -62,13 +62,6 @@ hi! link Statement    Keyword
 hi! link StorageClass Keyword
 hi! link Title        Keyword
 
-
-" idk if I need this
-" hi DiffAdd ctermfg=236 cterm=bold guifg=#333333 guibg=#a1e657 gui=bold
-" hi DiffDelete ctermfg=203 guifg=#f2524e guibg=NONE gui=NONE
-" hi DiffChange ctermfg=236 guifg=#333333 guibg=#b8cbd9 gui=NONE
-" hi DiffText ctermfg=236 cterm=bold guifg=#333333 guibg=#729fcf gui=bold
-
 " TS
 hi!   link   typescriptImport   Keyword
 
@@ -123,3 +116,6 @@ hi   GitSignsDelete   ctermbg=none   ctermfg=196
 "Git 
 hi! link diffAdded GitSignsAdd
 hi! link diffRemoved GitSignsDelete
+
+"Nvimtree
+hi! link NvimTreeCursorLine Visual
