@@ -3,6 +3,7 @@ vim/.netrwhist
 vim/sessions
 vim/backups
 vim/undodir
+vim/plug
 tmux/resurrect
 .undodir
 tmux/plugins/
