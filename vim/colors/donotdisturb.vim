@@ -119,8 +119,14 @@ hi! link diffRemoved GitSignsDelete
 
 "Nvimtree
 hi! link NvimTreeCursorLine Visual
-hi NvimTreeFolderIcon guibg=blue
+hi! link NvimTreeFolderIcon String
+" Nimvtree git
 hi! link NvimTreeGitDirty GitSignsAdd
 hi! link NvimTreeGitNew GitSignsAdd
 hi! link NvimTreeGitDeleted GitSignsDelete
 hi! link NvimTreeGitRenamed GitSignsChange
+
+hi! link NvimTreeFileDirty GitSignsAdd
+hi! link NvimTreeFileNew GitSignsAdd
+hi! link NvimTreeFileDeleted GitSignsDelete
+hi! link NvimTreeFileRenamed GitSignsChange
