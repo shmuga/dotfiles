@@ -59,4 +59,3 @@
     ~/.config/alacritty/alacritty.yml: alacritty.yaml
     ~/.config/bat/config: bat/bat.config
     ~/.config/bat/themes/DoNotDisturb.tmTheme: bat/DoNotDisturb.tmTheme
-    ~/.config/nvim/coc-settings.json: vim/settings/coc-settings.json
