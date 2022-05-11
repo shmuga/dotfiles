@@ -41,6 +41,7 @@ Plug 'rcarriga/vim-ultest', { 'do': ':UpdateRemotePlugins' }
 
 " ------------------- [Syntax] -------------------
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'romgrk/nvim-treesitter-context'
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'rust-lang/rust.vim'
 Plug 'ziglang/zig.vim'

@@ -7,3 +7,5 @@ require('settings.nvim-treesitter');
 require('settings.hop');
 require('settings.project');
 require('settings.nvimtree');
+require('settings.treesitter-context');
+
