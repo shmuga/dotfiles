@@ -25,8 +25,14 @@ let g:which_key_map['E'] = [ ':NvimTreeFocus' , 'explorer' ]
 let g:which_key_map['r'] = [ ':Telescope oldfiles cwd_only=true include_current_session=true' , 'recent files ']
 let g:which_key_map['u'] = [ ':UndotreeToggle'                               , 'undo tree']
 let g:which_key_map['W'] = [ ':call WindowSwap#EasyWindowSwap()'             , 'move window' ]
+let g:which_key_map['1'] = [ ":execute \"lua require('harpoon.ui').nav_file(1)\"", 'harpoon' ]
+let g:which_key_map['2'] = [ ":execute \"lua require('harpoon.ui').nav_file(2)\"", 'harpoon' ]
+let g:which_key_map['3'] = [ ":execute \"lua require('harpoon.ui').nav_file(3)\"", 'harpoon' ]
+let g:which_key_map['4'] = [ ":execute \"lua require('harpoon.ui').nav_file(4)\"", 'harpoon' ]
+let g:which_key_map['5'] = [ ":execute \"lua require('harpoon.ui').nav_file(5)\"", 'harpoon' ]
+let g:which_key_map['x'] = [ ":execute \"lua require('harpoon.ui').toggle_quick_menu()\"", 'harpoon' ]
+let g:which_key_map['X'] = [ ":execute \"lua require('harpoon.mark').add_file()\"", 'harpoon add' ]
 let g:which_key_map['z'] = [ 'Goyo'                                          , 'zen' ]
-
 
 let g:which_key_map.a = {
       \ 'name' : '+actions' ,
@@ -56,8 +62,9 @@ let g:which_key_map.s = {
       \ 'g' : [':Telescope git_status'                  ,  'git files (modified)'],
       \ 'G' : [':Telescopr git_files'                   ,  'git files'],
       \ 'h' : [':Telescope commands'                    ,  'command history'],
-      \ 'm' : [':Telescope man_pages'                   ,  'man pages'] ,
-      \ 'M' : [':Telescope keymaps'                     ,  'normal maps'] ,
+      \ 'k' : [':Telescope keymaps'                     ,  'normal maps'] ,
+      \ 'm' : [':Telescope harpoon marks'               ,  'haproon'] ,
+      \ 'M' : [':Telescope man_pages'                   ,  'man pages'] ,
       \ 'q' : [':Telescope quickfix'                    ,  'quickfix list'],
       \ 'r' : [':Telescope oldfiles'                    ,  'recent files '],
       \ 'p' : [':Telescope projects'                    ,  'recent files '],

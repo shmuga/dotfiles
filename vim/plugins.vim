@@ -76,6 +76,7 @@ Plug 'phaazon/hop.nvim' " easymotion
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'fannheyward/telescope-coc.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make', 'branch': 'main' }
+Plug 'ThePrimeagen/harpoon'
 Plug 'ahmedkhalf/project.nvim'
 
 " ------------------- [Text objects] -------------------
