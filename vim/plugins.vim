@@ -71,7 +71,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 " ------------------- [Search] -------------------
 Plug 'nelstrom/vim-visual-star-search' " search selection using *
 Plug 'vim-scripts/IndexedSearch'
-Plug 'phaazon/hop.nvim' " easymotion
+Plug 'ggandor/lightspeed.nvim', { 'branch': 'main' } " easymotion
 " Telescope and dependencies
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'fannheyward/telescope-coc.nvim'
