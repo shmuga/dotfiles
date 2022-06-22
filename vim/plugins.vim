@@ -15,6 +15,7 @@ Plug 'wesQ3/vim-windowswap'
 Plug 'junegunn/goyo.vim'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'gelguy/wilder.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " ------------------- [Nvim essentails] -------------------
 Plug 'nvim-lua/plenary.nvim'
