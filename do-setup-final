@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+cargo install ripgrep
+cargo install bat
+fnm install 18
+fnm use 18
+npm install -g neovim
+./install
+rm -rf /home/root
+ln -s /root /home/root
+fish
