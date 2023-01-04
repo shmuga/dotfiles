@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+chsh -s $(which fish)
+eval "$(grep -vFx '[ -z "$PS1" ] && return' /root/.bashrc)"
+. /root/.bashrc
 cargo install ripgrep
 cargo install bat
 fnm install 18
@@ -7,4 +10,5 @@ npm install -g neovim
 ./install
 rm -rf /home/root
 ln -s /root /home/root
+bat cache -b
 fish
