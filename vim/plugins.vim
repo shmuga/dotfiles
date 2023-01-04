@@ -9,7 +9,7 @@ Plug 'hoob3rt/lualine.nvim'
 Plug 'SmiteshP/nvim-gps'
 Plug 'RRethy/vim-illuminate' "hightlight under the cursor
 Plug 'talek/obvious-resize'
-Plug 'Yggdroot/indentLine'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'wesQ3/vim-windowswap'
 Plug 'junegunn/goyo.vim'
@@ -38,7 +38,6 @@ Plug 'thinca/vim-quickrun'
 Plug 'tpope/vim-dispatch'
 Plug 'skywind3000/asyncrun.vim'
 Plug 'ruanyl/coverage.vim'
-Plug 'rcarriga/vim-ultest', { 'do': ':UpdateRemotePlugins' }
 
 " ------------------- [Syntax] -------------------
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
