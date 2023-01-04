@@ -1,12 +1,11 @@
 apt update
-apt upgrade
-apt install git
-apt install fish
-apt install build-essential
-apt install curl unzip
-apt install fd-find
-apt install python3-pip
-apt install fzf
+apt install -y git
+apt install -y fish
+apt install -y build-essential
+apt install -y curl unzip
+apt install -y fd-find
+apt install -y python3-pip
+apt install -y fzf
 chsh -s $(which fish)
 snap install nvim --classic
 snap install tmux --classic
