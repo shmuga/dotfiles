@@ -1,10 +1,13 @@
 #pragma once
 
-#define MASTER_LEFT
+#define MASTER_RIGHT
 #define USE_SERIAL
 #define SERIAL_USE_MULTI_TRANSACTION
 
 #define SPLIT_WPM_ENABLE
+#define SOFT_SERIAL_PIN D3
+#define SPLIT_POINTING_ENABLE
+#define POINTING_DEVICE_RIGHT
 
 // For audio support add this pin
 /* #define AUDIO_PIN B7 */

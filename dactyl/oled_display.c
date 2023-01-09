@@ -113,7 +113,7 @@ const char* layer_name(void) {
 
 // Used to draw on to the oled screen
 bool oled_task_user(void) {
-  if (!is_keyboard_master()) {
+  if (is_keyboard_master()) {
     render_anim();  // renders pixelart
 
     oled_set_cursor(0, 0);                            // sets cursor to (row, column) using charactar spacing (5 rows on 128x32 screen, anything more will overflow back to the top)

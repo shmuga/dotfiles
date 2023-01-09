@@ -20,5 +20,10 @@ OLED_DRIVER = SSD1306
 WPM_ENABLE = yes					# Enable word per minute counter
 LTO_ENABLE = yes
 
+POINTING_DEVICE_ENABLE = yes
+POINTING_DEVICE_DRIVER = pimoroni_trackball
+POINTING_DEVICE_RIGHT = yes
+
 SRC += oled_display.c
+SRC += pointing_device.c
 EXTRAFLAGS += -flto
