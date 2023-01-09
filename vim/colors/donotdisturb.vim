@@ -130,3 +130,5 @@ hi! link NvimTreeFileDirty GitSignsAdd
 hi! link NvimTreeFileNew GitSignsAdd
 hi! link NvimTreeFileDeleted GitSignsDelete
 hi! link NvimTreeFileRenamed GitSignsChange
+
+hi! link TreesitterContext Folded

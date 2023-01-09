@@ -105,7 +105,6 @@ Plug 'embear/vim-localvimrc'
 Plug 'ThePrimeagen/vim-be-good'
 
 " ------------------- [TPope perls] -------------------
-Plug 'tpope/vim-endwise' " adds ending for if
 Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-repeat' " better .
