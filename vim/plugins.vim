@@ -6,7 +6,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'dstein64/vim-startuptime'
 " ------------------- [Appearence] -------------------
 Plug 'hoob3rt/lualine.nvim'
-Plug 'SmiteshP/nvim-gps'
 Plug 'RRethy/vim-illuminate' "hightlight under the cursor
 Plug 'talek/obvious-resize'
 Plug 'lukas-reineke/indent-blankline.nvim'

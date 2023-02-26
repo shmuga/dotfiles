@@ -9,3 +9,4 @@ require('settings.nvimtree');
 require('settings.treesitter-context');
 require('settings.harpoon');
 require('settings.wilder');
+require('settings.illuminate');

@@ -20,6 +20,7 @@ let g:which_key_map[' '] = [ ':Telescope find_files'                         , '
 let g:which_key_map['-'] = [ '<C-W>s'                                        , 'split horizontal']
 let g:which_key_map['|'] = [ '<C-W>v'                                        , 'split vertical']
 let g:which_key_map['/'] = [ ':let @/ = ""'                                  , 'remove search highlight' ]
+let g:which_key_map['c'] = [ ':TSContextToggle' , 'context' ]
 let g:which_key_map['e'] = [ ':NvimTreeOpen' , 'explorer' ]
 let g:which_key_map['E'] = [ ':NvimTreeFocus' , 'explorer' ]
 let g:which_key_map['r'] = [ ':Telescope oldfiles cwd_only=true include_current_session=true' , 'recent files ']

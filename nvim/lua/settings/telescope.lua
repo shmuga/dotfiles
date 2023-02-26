@@ -9,5 +9,11 @@ require('telescope').setup{
     layout_config = {
       vertical = { width = 0.8, preview_cutoff = 4, }
     }
+  },
+  pickers = {
+    oldfiles = {
+      preview = false,
+      previewer = false,
+    },
   }
 }
