@@ -45,7 +45,9 @@
     ~/.fish: fish
     ~/.zsh: zsh
     ~/.zshrc: zshrc
-    ~/.tmux: tmux
+    ~/.tmux:
+        force: true
+        path: tmux
     ~/.tmux.conf: tmux.conf
     ~/.tmuxinator: tmuxinator
     ~/.tmux/powerline/themes/default.sh: 
