@@ -46,8 +46,8 @@ function! s:show_documentation()
 endfunction
 
 " actions
-" xmap ga  <Plug>(coc-codeaction-selected)
-" nmap ga  <Plug>(coc-codeaction-selected)
+xmap ga  <Plug>(coc-codeaction-selected)
+nmap ga  <Plug>(coc-codeaction-selected)
 
 " format
 " xmap gf  <Plug>(coc-format-selected)

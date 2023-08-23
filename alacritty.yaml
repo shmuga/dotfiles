@@ -2,8 +2,6 @@ window:
   decorations: buttonless
   startup_mode: Maximized
   dynamic_padding: true
-  dimensions:
-    columns: 80
 
 font:
   normal:
@@ -17,7 +15,6 @@ font:
     style: Regular Italic
 
   size: 20.0
-  use_thin_strokes: true
   offset:
     y: 2
     x: -2
