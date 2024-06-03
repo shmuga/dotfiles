@@ -15,7 +15,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'tversteeg/registers.nvim', { 'branch': 'main' }
 Plug 'kyazdani42/nvim-tree.lua'
 Plug 'gelguy/wilder.nvim', { 'do': ':UpdateRemotePlugins' }
-
+Plug 'andymass/vim-matchup'
 " ------------------- [Nvim essentails] -------------------
 Plug 'nvim-lua/plenary.nvim'
 Plug 'windwp/nvim-spectre'
@@ -30,6 +30,7 @@ Plug 'voldikss/vim-floaterm'
 Plug 'tpope/vim-git'
 Plug 'lewis6991/gitsigns.nvim', { 'branch': 'main' }
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
 " ------------------- [Tests] -------------------
 Plug 'janko/vim-test'
@@ -53,6 +54,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'hyhugh/coc-erlang_ls', {'do': 'yarn install --frozen-lockfile'}
 Plug 'honza/vim-snippets'
 Plug 'liuchengxu/vista.vim' " outline on the right
+Plug 'windwp/nvim-ts-autotag'
 
 " ------------------- [Stylechecks] -------------------
 Plug 'editorconfig/editorconfig-vim'

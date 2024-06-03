@@ -8,6 +8,7 @@ require('gitsigns').setup {
   },
   linehl = false,
   numhl = false,
+
   on_attach = function(bufnr)
     local gs = package.loaded.gitsigns
 

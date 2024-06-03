@@ -1,6 +1,4 @@
 window:
-  decorations: buttonless
-  startup_mode: Maximized
   dynamic_padding: true
 
 font:
@@ -16,8 +14,8 @@ font:
 
   size: 20.0
   offset:
-    y: 2
-    x: -2
+    y: 0
+    x: -3
 
 # Colors (Solarized Light)
 colors:
@@ -58,10 +56,8 @@ colors:
     white:   '#fdf6e3' # base3
 
 
-alt_send_esc: false
-
 shell:
-  program: /usr/local/bin/fish
+  program: /usr/bin/fish
 
 key_bindings:
   - { key: F,      mods: Command|Control,    action: ToggleFullscreen }

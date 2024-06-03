@@ -39,9 +39,5 @@
     "macro-error"
   ],
   "rust-analyzer.updates.channel": "nightly",
-  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/13.0.0/clangd_13.0.0/bin/clangd",
-  "zig.enabled": true,
-  "zig.startUpMessage": true,
-  "zig.path": "/usr/local/bin/zls",
-  "zig.debugLog": true
+  "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/14.0.3/clangd_14.0.3/bin/clangd"
 }

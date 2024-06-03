@@ -1,36 +1,4 @@
 - clean: ['~']
-
-- tap:
-  - railwaycat/emacsmacport
-  - clementtsang/bottom
-  - nexeck/homebrew-tmuxinator
-  - jesseduffield/lazygit
-
-- brew:
-    - git
-    - git-lfs
-    - zsh
-    - fzf
-    - Schniz/tap/fnm
-    - fasd
-    - rg
-    - bat
-    - fd
-    - ag
-    - dust
-    - tldr
-    - tokei
-    - sd
-    - bottom
-    - lazygit
-    - hstr
-    - jrnl
-    - clementtsang/bottom/bottom
-    - nexeck/homebrew-tmuxinator/tmuxinator
-
-- cask:
-  - emacs-mac
-
 - defaults:
     link:
       create: true
@@ -59,5 +27,6 @@
     ~/.vimrc: vimrc
     ~/.config/nvim: nvim
     ~/.config/alacritty/alacritty.yml: alacritty.yaml
+    ~/.config/alacritty/alacritty.toml: alacritty.toml
     ~/.config/bat/config: bat/bat.config
     ~/.config/bat/themes/DoNotDisturb.tmTheme: bat/DoNotDisturb.tmTheme

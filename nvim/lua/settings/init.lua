@@ -10,3 +10,6 @@ require('settings.treesitter-context');
 require('settings.harpoon');
 require('settings.wilder');
 require('settings.illuminate');
+require('settings.lightspeed');
+require('settings.nvim-ts-autotag');
+require("ibl").setup()

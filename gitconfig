@@ -136,3 +136,5 @@
 	recurseSubmodules = false
 [commit]
 	template = ~/.stCommitMsg
+[safe]
+	directory = /opt/flutter

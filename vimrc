@@ -51,6 +51,8 @@ set noswapfile
 set nobackup
 set nowb
 
+imap jk <ESC>
+
 " ------------------- [Persistent Undo] -------------------
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
