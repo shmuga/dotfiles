@@ -94,3 +94,4 @@ command! -nargs=0 Format :call CocActionAsync('format')
 " Add `:OR` command for organize imports of the current buffer.
 command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.organizeImport')
 
+let g:vista_ignore_kinds = ['Variable', 'Property']

@@ -58,6 +58,9 @@ colors:
 
 shell:
   program: /usr/bin/fish
+  args:
+    - -c
+    - "tmux attach -t default || tmux"
 
 key_bindings:
   - { key: F,      mods: Command|Control,    action: ToggleFullscreen }
