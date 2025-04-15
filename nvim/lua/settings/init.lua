@@ -12,4 +12,4 @@ require('settings.wilder');
 require('settings.illuminate');
 require('settings.lightspeed');
 require('settings.nvim-ts-autotag');
-require("ibl").setup()
+require('settings.markdown');

@@ -1,0 +1,76 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar at the bottom of your screen
+    "exclusive": true,
+    "reload_style_on_change":true,
+    "height": 30, // Waybar height
+    // Choose the order of the modules
+    "modules-left": ["custom/scratchpad-indicator","sway/workspaces", "sway/mode", "custom/spotify"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray", "clock", "sway/language"],
+    "output": ["HDMI-A-1"],
+    "sway/workspaces": {
+        "all-outputs": true
+    },
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "tray": {
+        "icon-size": 14,
+        "spacing": 10
+    },
+    "cpu": {
+        "format": "{usage}% "
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "battery": {
+        "bat": "BAT0",
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        // "interface": "wlp2s0", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
+        "format-disconnected": "Disconnected ⚠"
+    },
+    "pulseaudio": {
+        //"scroll-step": 1,
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "custom/spotify": {
+        "format": " {}",
+        "max-length": 40,
+        "interval": 30, // Remove this if your script is endless and write in loop
+        "exec": "$HOME/.config/waybar/mediaplayer.sh 2> /dev/null", // Script in resources folder
+        "exec-if": "pgrep spotify"
+    },
+    "custom/scratchpad-indicator": {
+      "interval": 3,
+      "return-type": "json",
+      "exec": "swaymsg -t get_tree | jq --unbuffered --compact-output '(select(.name == \"root\") | .nodes[] | select(.name == \"__i3\") | .nodes[] | select(.name == \"__i3_scratch\") | .focus) as $scratch_ids | [.. | (.nodes? + .floating_nodes?) // empty | .[] | select(.id|IN($scratch_ids[]))] as $scratch_nodes | { text: \"\\($scratch_nodes|length)\", tooltip: $scratch_nodes|map(.name)|join(\"\\n\") }'",
+      "format": "{} ",
+      "on-click": "swaymsg 'scratchpad show'",
+      "on-click-right": "swaymsg 'move scratchpad'"
+    }}

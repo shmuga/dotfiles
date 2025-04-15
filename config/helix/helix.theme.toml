@@ -1,0 +1,17 @@
+inherits = "acme"
+"ui.background" = { fg = "text", bg = "reset" }
+"keyword" = { modifiers = ["bold"]}
+"variable.parameter" = { modifiers = ["bold"]}
+"tag" = { modifiers = ["bold"]}
+"string" = "grey"
+"ui.linenr" = { fg = "reset", bg = "reset" }
+
+[palette]
+white = "#ffffff"
+acme_bg = "#eeeeee"
+black = "#000000"
+selected = "#dddddd"
+acme_bar_bg = "#ffd7ff"
+acme_bar_inactive = "#eaffff"
+gray = "#777777"
+

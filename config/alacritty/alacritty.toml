@@ -53,9 +53,8 @@ action = "ToggleFullscreen"
 key = "F"
 mods = "Command|Control"
 
-[shell]
-program = "/usr/bin/fish"
-args = ["-c", "tmux attach -t default|| tmux"]
+[terminal]
+shell = { program = "/usr/bin/fish",  args = ["-c", "tmux attach -t default|| tmux"] }
 
 [window]
 dynamic_padding = true

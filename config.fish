@@ -9,5 +9,8 @@ source ~/.fish/node.fish
 source ~/.fish/alias.fish
 source ~/.fish/env.fish
 
+if test -f ~/local.fish
+    source ~/local.fish
+end
 # ------------------- [CUSTOM SETTINGS] -------------------
 set TERM xterm-256color

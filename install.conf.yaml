@@ -5,28 +5,38 @@
       relink: true
 
 - link:
-    ~/.gitignore_global: gitignore_global
-    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: .gitignore_global
+    ~/.gitconfig: .gitconfig
     ~/.stCommitMsg: commit_template
     ~/.config/fish/config.fish: config.fish
     ~/.config/fish/fish_plugins: config.fish.plugins
     ~/.fish: fish
     ~/.zsh: zsh
-    ~/.zshrc: zshrc
+    ~/.zshrc: .zshrc
     ~/.tmux:
         force: true
         path: tmux
     ~/.tmux.conf: tmux.conf
-    ~/.tmuxinator: tmuxinator
     ~/.tmux/powerline/themes/default.sh: 
         force: true
         path: tmux/powerline.theme.sh
     ~/.vim: vim
-    ~/.vim-wiki: wiki
-    ~/wiki_html/theme.css: wiki/theme.css
-    ~/.vimrc: vimrc
+    ~/.vimrc: .vimrc
+    ~/.xinitrc: 
+        force: true
+        path: .xinitrc
+    ~/.Xresources: 
+        force: true
+        path: .Xresources
+    ~/.config/sway: 
+        force: true
+        path: ./config/sway
+    ~/.config/waybar: 
+        force: true
+        path: ./config/waybar
     ~/.config/nvim: nvim
-    ~/.config/alacritty/alacritty.yml: alacritty.yaml
-    ~/.config/alacritty/alacritty.toml: alacritty.toml
+    ~/.config/alacritty/alacritty.toml: ./config/alacritty/alacritty.toml
     ~/.config/bat/config: bat/bat.config
     ~/.config/bat/themes/DoNotDisturb.tmTheme: bat/DoNotDisturb.tmTheme
+    ~/.config/helix/config.toml: ./config/helix/helix.toml
+    ~/.config/helix/themes/donotdisturb.toml: ./config/helix/helix.theme.toml

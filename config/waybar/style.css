@@ -1,0 +1,159 @@
+@define-color rosewater #f5e0dc;
+@define-color flamingo #f2cdcd;
+@define-color pink #f5c2e7;
+@define-color mauve #cba6f7;
+@define-color red #f38ba8;
+@define-color maroon #eba0ac;
+@define-color peach #fab387;
+@define-color yellow #f9e2af;
+@define-color green #a6e3a1;
+@define-color teal #94e2d5;
+@define-color sky #89dceb;
+@define-color sapphire #74c7ec;
+@define-color blue #89b4fa;
+@define-color lavender #b4befe;
+@define-color subtext1 #bac2de;
+@define-color subtext0 #a6adc8;
+@define-color overlay2 #9399b2;
+@define-color overlay1 #7f849c;
+@define-color surface2 #585b70;
+@define-color surface1 #45475a;
+@define-color surface0 #313244;
+@define-color mantle #181825;
+@define-color crust #11111b;
+
+@define-color text #cdd6f4;
+@define-color base #1e1e2e;
+@define-color overlay0 #6c7086;
+
+* {
+  border: none;
+  font-size: 14px;
+  font-family: "JetBrainsMono Nerd Font,JetBrainsMono NF";
+  min-height: 25px;
+}
+
+window#waybar {
+  background: transparent;
+  margin: 5px;
+}
+
+#custom-logo {
+  padding: 0 10px;
+}
+
+.modules-right {
+  padding-left: 5px;
+  border-radius: 5px 0 0 5px;
+  margin-top: 2px;
+  background: @base;
+  opacity: 0.9;
+}
+
+#workspaces button:last-child {
+  background: transparent;
+  color: @text;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  background: transparent;
+  color: @text;
+}
+
+#workspaces button.focused {
+  background: #ddd;
+  background: @rosewater;
+  color: @base;
+  color: @mantle;
+}
+
+#custom-scratchpad-indicator {
+  padding: 0 5px;
+  margin-right: 10px;
+}
+
+.modules-center {
+  padding: 0 15px;
+  margin-top: 2px;
+  border-radius: 5px 5px 5px 5px;
+  background: @base;
+  font-size: 14px;
+}
+
+.modules-left {
+  border-radius: 0 5px 5px 0;
+  margin-top: 2px;
+  opacity: 0.9;
+  background: @base;
+}
+
+#battery,
+#language,
+#custom-clipboard,
+#custom-colorpicker,
+#custom-powerDraw,
+#bluetooth,
+#pulseaudio,
+#network,
+#disk,
+#memory,
+#backlight,
+#cpu,
+#temperature,
+#custom-weather,
+#idle_inhibitor,
+#jack,
+#tray,
+#window,
+#workspaces,
+#clock {
+  padding: 0 10px;
+  color: @text;
+}
+#pulseaudio {
+  padding-top: 3px;
+}
+
+#custom-scratchpad-indicator {
+  color: @text;
+  padding: 0px 5px 0px 20px;
+  margin: 0;
+}
+
+#temperature.critical,
+#pulseaudio.muted {
+  color: #ff0000;
+  padding-top: 0;
+}
+
+#clock {
+  color: #5fd1fa;
+}
+
+#battery.charging {
+  color: #ffffff;
+  background-color: #26a65b;
+}
+
+#battery.warning:not(.charging) {
+  background-color: #ffbe61;
+  color: black;
+}
+
+#battery.critical:not(.charging) {
+  background-color: #f53c3c;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
