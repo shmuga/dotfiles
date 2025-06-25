@@ -42,11 +42,13 @@ Plug 'ruanyl/coverage.vim'
 " ------------------- [Syntax] -------------------
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'romgrk/nvim-treesitter-context'
-Plug 'jtratner/vim-flavored-markdown'
 Plug 'rust-lang/rust.vim'
+Plug 'mrcjkb/rustaceanvim'
 Plug 'ziglang/zig.vim'
 Plug 'sevko/vim-nand2tetris-syntax'
 Plug 'whonore/Coqtail'
+Plug 'MeanderingProgrammer/render-markdown.nvim'
+Plug 'Olical/conjure'
 
 " ------------------- [LS/Completitions] -------------------
 Plug 'mattn/emmet-vim'
@@ -67,7 +69,6 @@ Plug 'thaerkh/vim-workspace'
 Plug 'vim-scripts/utl.vim'
 Plug 'sjl/gundo.vim'
 Plug 'vimwiki/vimwiki'
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 " ------------------- [Search] -------------------
 Plug 'nelstrom/vim-visual-star-search' " search selection using *
@@ -92,6 +93,9 @@ Plug 'terryma/vim-expand-region' " +
 " ------------------- [Other] -------------------
 Plug 'AndrewRadev/splitjoin.vim' " gS / gJ one line
 Plug 'windwp/nvim-autopairs'
+Plug 'julienvincent/nvim-paredit'
+Plug 'gpanders/nvim-parinfer'
+Plug 'dundalek/parpar.nvim'
 Plug 'godlygeek/tabular' " align items by symbol :Tabularize /<pattern>/
 Plug 'vim-scripts/camelcasemotion' " motion W/B/E camel case variables
 Plug 'mg979/vim-visual-multi', {'branch': 'master'} " multi-cursors C+N, q to skip

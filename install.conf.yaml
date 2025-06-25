@@ -40,3 +40,7 @@
     ~/.config/bat/themes/DoNotDisturb.tmTheme: bat/DoNotDisturb.tmTheme
     ~/.config/helix/config.toml: ./config/helix/helix.toml
     ~/.config/helix/themes/donotdisturb.toml: ./config/helix/helix.theme.toml
+    ~/.lynx.cfg: ./config/lynx/lynx.cfg
+    ~/.lynxrc: 
+        force: true
+        path: ./config/lynx/.lynxrc

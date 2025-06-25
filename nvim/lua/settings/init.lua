@@ -12,4 +12,5 @@ require('settings.wilder');
 require('settings.illuminate');
 require('settings.lightspeed');
 require('settings.nvim-ts-autotag');
+require('settings.clojure');
 require('settings.markdown');

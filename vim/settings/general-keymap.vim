@@ -5,6 +5,7 @@
 "
 
 let mapleader=","
+let maplocalleader=","
 
 " Make 0 go to the first character rather than the beginning
 " of the line. When we're programming, we're almost always
